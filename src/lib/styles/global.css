@@ -1,0 +1,71 @@
+/* Файл для глобальных классов */
+.g-icon-svg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.g-page {
+    display: block;
+}
+
+.g-title-h1 {
+    font-family: var(--main-font);
+    font-size: var(--h1-font-size);
+    color: var(--title-h1-color);
+}
+
+.g-title-h2 {
+    font-family: var(--main-font);
+    font-size: var(--h2-font-size);
+    color: var(--title-h2-color);
+}
+
+.g-title-h3 {
+    font-family: var(--main-font);
+    font-size: var(--h3-font-size);
+    color: var(--title-h3-color);
+}
+
+.g-main-text {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+}
+
+.g-minimal-text {
+    font-family: var(--main-font);
+    font-size: var(--minimal-font-size);
+    color: var(--main-text-color);
+}
+
+.g-accent-text {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    color: var(--accent-text-color);
+}
+
+.g-scrollable-v {
+    &::-webkit-scrollbar {
+        width: 16px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--bg-main-color-0);
+        border-radius: 15px;
+        border: 6px solid transparent;
+        background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--bg-main-color-p100);
+        border-radius: 15px;
+        border: 6px solid transparent;
+        background-clip: padding-box;
+    }
+}
