@@ -1,0 +1,15 @@
+/* Файл для настройки переменных тем */
+
+:root {}
+
+:root[data-theme="light"] {}
+
+:root[data-theme="dark"] {}
+
+@media (prefers-color-scheme: light) {
+    :root[data-theme="auto"] {}
+}
+
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="auto"] {}
+}
