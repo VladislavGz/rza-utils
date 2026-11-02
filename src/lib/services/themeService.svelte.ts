@@ -19,10 +19,7 @@ function normalizeTheme(theme: string): TTheme {
  * Эту функцию следует вызывать только контекстах, имеющих
  * loacalStorage и document (т.е. после монтирования компонента на клиенте)
  */
-function setTheme (theme: string) {
-    const normTheme = normalizeTheme(theme);
-    if (normTheme === themeState.theme) return;
-
+function setNormTheme(normTheme: TTheme) {
     themeState.theme = normTheme;
 
     try {
@@ -33,7 +30,27 @@ function setTheme (theme: string) {
     }
 }
 
+/**
+ * Функция устанавливает новую тему по ее имени с проверкой корректности имени
+ */
+function setTheme(theme: string) {
+    const normTheme = normalizeTheme(theme);
+    if (normTheme === themeState.theme) return;
+
+    setNormTheme(normTheme);
+}
+
+/**
+ * Функция меняет тему на следующую
+ */
+function nextTheme() {
+    if (themeState.theme === 'dark') return setNormTheme('light');
+    if (themeState.theme === 'light') return setNormTheme('auto');
+    setNormTheme('dark');
+}
+
 export const themeApi = {
-    setTheme
+    setTheme,
+    nextTheme
 }
 
