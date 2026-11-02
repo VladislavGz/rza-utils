@@ -10,37 +10,46 @@
 }
 
 .g-title-h1 {
-    font-family: var(--main-font);
     font-size: var(--h1-font-size);
     color: var(--title-h1-color);
 }
 
 .g-title-h2 {
-    font-family: var(--main-font);
     font-size: var(--h2-font-size);
     color: var(--title-h2-color);
 }
 
 .g-title-h3 {
-    font-family: var(--main-font);
     font-size: var(--h3-font-size);
     color: var(--title-h3-color);
 }
 
+.g-title-h4 {
+    font-size: var(--h4-font-size);
+    color: var(--title-h4-color);
+}
+
+.g-title-h5 {
+    font-size: var(--h5-font-size);
+    color: var(--title-h5-color);
+}
+
+.g-title-h6 {
+    font-size: var(--h6-font-size);
+    color: var(--title-h6-color);
+}
+
 .g-main-text {
-    font-family: var(--main-font);
     font-size: var(--main-font-size);
     color: var(--main-text-color);
 }
 
 .g-minimal-text {
-    font-family: var(--main-font);
     font-size: var(--minimal-font-size);
     color: var(--main-text-color);
 }
 
 .g-accent-text {
-    font-family: var(--main-font);
     font-size: var(--main-font-size);
     color: var(--accent-text-color);
 }
