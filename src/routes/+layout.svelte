@@ -15,3 +15,9 @@
 </svelte:head>
 
 {@render children()}
+
+<style>
+    :global(body) {
+        background-color: var(--bg-base-color);
+    }
+</style>
