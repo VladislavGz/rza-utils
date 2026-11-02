@@ -1,0 +1,156 @@
+/* Файл настройки шрифтов */
+
+:root {
+    /* Настройки для ПК */
+    --desctop-h1-font-size: 32px;
+    --desctop-h2-font-size: 24px;
+    --desctop-h3-font-size: 18px;
+    --desctop-h4-font-size: 16px;
+    --desctop-h5-font-size: 16px;
+    --desctop-h6-font-size: 16px;
+    --desktop-main-font-size: 16px;
+    --desktop-minimal-font-size: 14px;
+
+    --desktop-icon-size-auto: 100%;
+    --desktop-icon-size-micro: 20px;
+    --desktop-icon-size-small: 26px;
+    --desktop-icon-size-medium: 32px;
+    --desktop-icon-size-big: 48px;
+    --desktop-icon-size-large: 56px;
+
+    --desktop-icon-button-size-auto: 100%;
+    --desktop-icon-button-size-micro: 20px;
+    --desktop-icon-button-size-small: 26px;
+    --desktop-icon-button-size-medium: 32px;
+    --desktop-icon-button-size-big: 48px;
+    --desktop-icon-button-size-large: 56px;
+
+    /* Настройки для планшетов */
+    --tablet-h1-font-size: 28px;
+    --tablet-h2-font-size: 20px;
+    --tablet-h3-font-size: 16px;
+    --tablet-h4-font-size: 14px;
+    --tablet-h5-font-size: 14px;
+    --tablet-h6-font-size: 14px;
+    --tablet-main-font-size: 14px;
+    --tablet-minimal-font-size: 12px;
+
+    --tablet-icon-size-auto: 100%;
+    --tablet-icon-size-micro: 20px;
+    --tablet-icon-size-small: 26px;
+    --tablet-icon-size-medium: 32px;
+    --tablet-icon-size-big: 48px;
+    --tablet-icon-size-large: 56px;
+
+    --tablet-icon-button-size-auto: 100%;
+    --tablet-icon-button-size-micro: 20px;
+    --tablet-icon-button-size-small: 26px;
+    --tablet-icon-button-size-medium: 32px;
+    --tablet-icon-button-size-big: 48px;
+    --tablet-icon-button-size-large: 56px;
+
+    /* Настройки для мобильных */
+    --mobile-h1-font-size: 24px;
+    --mobile-h2-font-size: 18px;
+    --mobile-h3-font-size: 14px;
+    --mobile-h4-font-size: 12px;
+    --mobile-h5-font-size: 12px;
+    --mobile-h6-font-size: 12px;
+    --mobile-main-font-size: 12px;
+    --mobile-minimal-font-size: 10px;
+
+    --mobile-icon-size-auto: 100%;
+    --mobile-icon-size-micro: 20px;
+    --mobile-icon-size-small: 26px;
+    --mobile-icon-size-medium: 32px;
+    --mobile-icon-size-big: 48px;
+    --mobile-icon-size-large: 56px;
+
+    --mobile-icon-button-size-auto: 100%;
+    --mobile-icon-button-size-micro: 20px;
+    --mobile-icon-button-size-small: 26px;
+    --mobile-icon-button-size-medium: 32px;
+    --mobile-icon-button-size-big: 48px;
+    --mobile-icon-button-size-large: 56px;
+}
+
+@media (700px <=width) {
+    :root {
+        --h1-font-size: var(--desctop-h1-font-size);
+        --h2-font-size: var(--desctop-h2-font-size);
+        --h3-font-size: var(--desctop-h3-font-size);
+        --h4-font-size: var(--desctop-h4-font-size);
+        --h5-font-size: var(--desctop-h5-font-size);
+        --h6-font-size: var(--desctop-h6-font-size);
+        --main-font-size: var(--desktop-main-font-size);
+        --minimal-font-size: var(--desktop-minimal-font-size);
+
+        --icon-size-auto: var(--desktop-icon-size-auto);
+        --icon-size-micro: var(--desktop-icon-size-micro);
+        --icon-size-small: var(--desktop-icon-size-small);
+        --icon-size-medium: var(--desktop-icon-size-medium);
+        --icon-size-big: var(--desktop-icon-size-big);
+        --icon-size-large: var(--desktop-icon-size-large);
+
+        --icon-button-size-auto: var(--desktop-icon-button-size-auto);
+        --icon-button-size-micro: var(--desktop-icon-button-size-micro);
+        --icon-button-size-small: var(--desktop-icon-button-size-small);
+        --icon-button-size-medium: var(--desktop-icon-button-size-medium);
+        --icon-button-size-big: var(--desktop-icon-button-size-big);
+        --icon-button-size-large: var(--desktop-icon-button-size-large);
+    }
+}
+
+@media (550px <=width < 700px) {
+    :root {
+        --h1-font-size: var(--tablet-h1-font-size);
+        --h2-font-size: var(--tablet-h2-font-size);
+        --h3-font-size: var(--tablet-h3-font-size);
+        --h4-font-size: var(--tablet-h4-font-size);
+        --h5-font-size: var(--tablet-h5-font-size);
+        --h6-font-size: var(--tablet-h6-font-size);
+        --main-font-size: var(--tablet-main-font-size);
+        --minimal-font-size: var(--tablet-minimal-font-size);
+
+        --icon-size-auto: var(--tablet-icon-size-auto);
+        --icon-size-micro: var(--tablet-icon-size-micro);
+        --icon-size-small: var(--tablet-icon-size-small);
+        --icon-size-medium: var(--tablet-icon-size-medium);
+        --icon-size-big: var(--tablet-icon-size-big);
+        --icon-size-large: var(--tablet-icon-size-large);
+
+        --icon-button-size-auto: var(--tablet-icon-button-size-auto);
+        --icon-button-size-micro: var(--tablet-icon-button-size-micro);
+        --icon-button-size-small: var(--tablet-icon-button-size-small);
+        --icon-button-size-medium: var(--tablet-icon-button-size-medium);
+        --icon-button-size-big: var(--tablet-icon-button-size-big);
+        --icon-button-size-large: var(--tablet-icon-button-size-large);
+    }
+}
+
+@media (width < 550px) {
+    :root {
+        --h1-font-size: var(--mobile-h1-font-size);
+        --h2-font-size: var(--mobile-h2-font-size);
+        --h3-font-size: var(--mobile-h3-font-size);
+        --h4-font-size: var(--mobile-h4-font-size);
+        --h5-font-size: var(--mobile-h5-font-size);
+        --h6-font-size: var(--mobile-h6-font-size);
+        --main-font-size: var(--mobile-main-font-size);
+        --minimal-font-size: var(--mobile-minimal-font-size);
+
+        --icon-size-auto: var(--mobile-icon-size-auto);
+        --icon-size-micro: var(--mobile-icon-size-micro);
+        --icon-size-small: var(--mobile-icon-size-small);
+        --icon-size-medium: var(--mobile-icon-size-medium);
+        --icon-size-big: var(--mobile-icon-size-big);
+        --icon-size-large: var(--mobile-icon-size-large);
+
+        --icon-button-size-auto: var(--mobile-icon-button-size-auto);
+        --icon-button-size-micro: var(--mobile-icon-button-size-micro);
+        --icon-button-size-small: var(--mobile-icon-button-size-small);
+        --icon-button-size-medium: var(--mobile-icon-button-size-medium);
+        --icon-button-size-big: var(--mobile-icon-button-size-big);
+        --icon-button-size-large: var(--mobile-icon-button-size-large);
+    }
+}
