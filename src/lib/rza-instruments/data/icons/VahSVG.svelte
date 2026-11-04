@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+	<path
+		d="M 110 -140
+       C 200 -330 340 -690 400 -750
+       C 450 -800 600 -800 900 -800"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="inherit"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+</svg>
