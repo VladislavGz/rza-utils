@@ -8,7 +8,8 @@ export type TUtilDescription = {
 	name: string;
 	description: string;
 	link: string;
-	icon: Component
+	icon: Component;
+	iconStrokeWidth: number;
 };
 
 /**
