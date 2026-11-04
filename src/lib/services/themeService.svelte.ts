@@ -1,7 +1,7 @@
 import type { TTheme, TThemeState } from "#lib/types/types.ts";
 
 export const themeState: TThemeState = $state({
-    theme: 'dark'
+    theme: 'auto'
 });
 
 /**
