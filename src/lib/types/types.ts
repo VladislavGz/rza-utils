@@ -1,4 +1,4 @@
-import type { Component } from "svelte";
+import type { Component } from 'svelte';
 
 /**
  * Описание утилиты
@@ -21,5 +21,5 @@ export type TTheme = 'dark' | 'light' | 'auto';
  * Объект состояния темы
  */
 export type TThemeState = {
-    theme: TTheme
-}
+	theme: TTheme;
+};

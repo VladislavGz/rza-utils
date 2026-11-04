@@ -39,9 +39,9 @@
 
 <style>
 	.title {
-        display: block;
-        text-align: center;
-        
+		display: block;
+		text-align: center;
+
 		&._font-main {
 			font-family: var(--main-font);
 		}
@@ -50,8 +50,8 @@
 			font-family: var(--accent-font);
 		}
 
-        &._font-logo {
-            font-family: var(--logo-font);
-        }
+		&._font-logo {
+			font-family: var(--logo-font);
+		}
 	}
 </style>

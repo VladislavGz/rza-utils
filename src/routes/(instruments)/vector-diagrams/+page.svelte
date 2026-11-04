@@ -1,5 +1,5 @@
 <script lang="ts">
-	import VectorDiagramsPage from "#lib/pages/instruments/VectorDiagramsPage.svelte";
+	import VectorDiagramsPage from '#lib/pages/instruments/VectorDiagramsPage.svelte';
 </script>
 
 <svelte:head>
@@ -7,4 +7,4 @@
 	<!-- TODO: добавить SEO-теги -->
 </svelte:head>
 
-<VectorDiagramsPage/>
+<VectorDiagramsPage />

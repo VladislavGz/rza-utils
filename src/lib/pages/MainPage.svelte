@@ -19,11 +19,11 @@
 
 <style>
 	.instruments-list {
-        margin-top: 26px;
+		margin-top: 26px;
 
 		display: flex;
 		flex-direction: row;
-        justify-content: center;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
 	}

@@ -11,7 +11,7 @@ export type TFont = 'logo' | 'accent' | 'main';
 /**
  * Тип размеров UI
  */
-export type TUiSize = 'auto' | 'micro' | 'small' | 'medium' | 'big' | 'large'; 
+export type TUiSize = 'auto' | 'micro' | 'small' | 'medium' | 'big' | 'large';
 
 /**
  * UI режим кнопки

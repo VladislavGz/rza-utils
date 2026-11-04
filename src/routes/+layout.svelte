@@ -16,9 +16,9 @@
 		 */
 		const savedTheme = localStorage.getItem('theme');
 		if (savedTheme) {
-            themeApi.setTheme(savedTheme);
+			themeApi.setTheme(savedTheme);
 		} else {
-            themeApi.setTheme('auto');
+			themeApi.setTheme('auto');
 		}
 	});
 </script>

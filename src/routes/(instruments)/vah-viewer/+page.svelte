@@ -1,5 +1,5 @@
 <script lang="ts">
-	import VahViewerPage from "#lib/pages/instruments/VahViewerPage.svelte";
+	import VahViewerPage from '#lib/pages/instruments/VahViewerPage.svelte';
 </script>
 
 <svelte:head>
@@ -7,4 +7,4 @@
 	<!-- TODO: добавить SEO-теги -->
 </svelte:head>
 
-<VahViewerPage/>
+<VahViewerPage />

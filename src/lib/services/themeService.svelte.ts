@@ -1,7 +1,7 @@
-import type { TTheme, TThemeState } from "#lib/types/types.ts";
+import type { TTheme, TThemeState } from '#lib/types/types.ts';
 
 export const themeState: TThemeState = $state({
-    theme: 'auto'
+	theme: 'auto'
 });
 
 /**
@@ -10,8 +10,8 @@ export const themeState: TThemeState = $state({
  * темы будет возвращено 'dark'
  */
 function normalizeTheme(theme: string): TTheme {
-    if (theme === 'dark' || theme === 'light') return theme;
-    return 'auto';
+	if (theme === 'dark' || theme === 'light') return theme;
+	return 'auto';
 }
 
 /**
@@ -20,37 +20,36 @@ function normalizeTheme(theme: string): TTheme {
  * loacalStorage и document (т.е. после монтирования компонента на клиенте)
  */
 function setNormTheme(normTheme: TTheme) {
-    themeState.theme = normTheme;
+	themeState.theme = normTheme;
 
-    try {
-        document.documentElement.setAttribute('data-theme', normTheme);
-        localStorage.setItem('theme', normTheme);
-    } catch (error) {
-        console.error(error);
-    }
+	try {
+		document.documentElement.setAttribute('data-theme', normTheme);
+		localStorage.setItem('theme', normTheme);
+	} catch (error) {
+		console.error(error);
+	}
 }
 
 /**
  * Функция устанавливает новую тему по ее имени с проверкой корректности имени
  */
 function setTheme(theme: string) {
-    const normTheme = normalizeTheme(theme);
-    if (normTheme === themeState.theme) return;
+	const normTheme = normalizeTheme(theme);
+	if (normTheme === themeState.theme) return;
 
-    setNormTheme(normTheme);
+	setNormTheme(normTheme);
 }
 
 /**
  * Функция меняет тему на следующую
  */
 function nextTheme() {
-    if (themeState.theme === 'dark') return setNormTheme('light');
-    if (themeState.theme === 'light') return setNormTheme('auto');
-    setNormTheme('dark');
+	if (themeState.theme === 'dark') return setNormTheme('light');
+	if (themeState.theme === 'light') return setNormTheme('auto');
+	setNormTheme('dark');
 }
 
 export const themeApi = {
-    setTheme,
-    nextTheme
-}
-
+	setTheme,
+	nextTheme
+};

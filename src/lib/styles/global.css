@@ -1,98 +1,98 @@
 /* Файл для глобальных классов */
 .g-icon-svg {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1;
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
 }
 
 .g-page {
-    display: block;
+	display: block;
 }
 
 .g-title-h1 {
-    font-size: var(--h1-font-size);
-    color: var(--title-h1-color);
+	font-size: var(--h1-font-size);
+	color: var(--title-h1-color);
 }
 
 .g-title-h2 {
-    font-size: var(--h2-font-size);
-    color: var(--title-h2-color);
+	font-size: var(--h2-font-size);
+	color: var(--title-h2-color);
 }
 
 .g-title-h3 {
-    font-size: var(--h3-font-size);
-    color: var(--title-h3-color);
+	font-size: var(--h3-font-size);
+	color: var(--title-h3-color);
 }
 
 .g-title-h4 {
-    font-size: var(--h4-font-size);
-    color: var(--title-h4-color);
+	font-size: var(--h4-font-size);
+	color: var(--title-h4-color);
 }
 
 .g-title-h5 {
-    font-size: var(--h5-font-size);
-    color: var(--title-h5-color);
+	font-size: var(--h5-font-size);
+	color: var(--title-h5-color);
 }
 
 .g-title-h6 {
-    font-size: var(--h6-font-size);
-    color: var(--title-h6-color);
+	font-size: var(--h6-font-size);
+	color: var(--title-h6-color);
 }
 
 .g-main-text {
-    font-size: var(--main-font-size);
-    color: var(--main-text-color);
+	font-size: var(--main-font-size);
+	color: var(--main-text-color);
 }
 
 .g-minimal-text {
-    font-size: var(--minimal-font-size);
-    color: var(--main-text-color);
+	font-size: var(--minimal-font-size);
+	color: var(--main-text-color);
 }
 
 .g-accent-text {
-    font-size: var(--main-font-size);
-    color: var(--accent-text-color);
+	font-size: var(--main-font-size);
+	color: var(--accent-text-color);
 }
 
 .g-visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
 
 .g-common-wrapper {
-    margin-inline: auto;
-    max-width: 1024px;
-    padding-inline: 12px;
+	margin-inline: auto;
+	max-width: 1024px;
+	padding-inline: 12px;
 }
 
 .g-scrollable-v {
-    &::-webkit-scrollbar {
-        width: 16px;
-        background: transparent;
-    }
+	&::-webkit-scrollbar {
+		width: 16px;
+		background: transparent;
+	}
 
-    &::-webkit-scrollbar-track {
-        background: transparent;
-    }
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
 
-    &::-webkit-scrollbar-thumb {
-        background: var(--bg-main-color-0);
-        border-radius: 15px;
-        border: 6px solid transparent;
-        background-clip: padding-box;
-    }
+	&::-webkit-scrollbar-thumb {
+		background: var(--bg-main-color-0);
+		border-radius: 15px;
+		border: 6px solid transparent;
+		background-clip: padding-box;
+	}
 
-    &::-webkit-scrollbar-thumb:hover {
-        background: var(--bg-main-color-p100);
-        border-radius: 15px;
-        border: 6px solid transparent;
-        background-clip: padding-box;
-    }
+	&::-webkit-scrollbar-thumb:hover {
+		background: var(--bg-main-color-p100);
+		border-radius: 15px;
+		border: 6px solid transparent;
+		background-clip: padding-box;
+	}
 }

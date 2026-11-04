@@ -1,190 +1,190 @@
 /* Файл для настройки переменных тем */
 
 :root {
-    /* Шрифты */
-    --logo-font: 'Press-Start-2P', monospace;
-    --accent-font: monospace;
-    --main-font: 'Roboto', sans-serif;
+	/* Шрифты */
+	--logo-font: 'Press-Start-2P', monospace;
+	--accent-font: monospace;
+	--main-font: 'Roboto', sans-serif;
 
-    /* Темная тема */
-    --dark-bg-base-color: #111;
+	/* Темная тема */
+	--dark-bg-base-color: #111;
 
-    --dark-bg-main-color-n100: #222;
-    --dark-bg-main-color-0: #333;
-    --dark-bg-main-color-p100: #444;
-    --dark-bg-main-color-p200: #555;
+	--dark-bg-main-color-n100: #222;
+	--dark-bg-main-color-0: #333;
+	--dark-bg-main-color-p100: #444;
+	--dark-bg-main-color-p200: #555;
 
-    --dark-icon-color-main: #aaa;
-    --dark-icon-color-accent: #eee;
-    --dark-icon-color-error: #e33;
+	--dark-icon-color-main: #aaa;
+	--dark-icon-color-accent: #eee;
+	--dark-icon-color-error: #e33;
 
-    --dark-icon-button-color-normal: #aaa;
-    --dark-icon-button-color-disabled: #555;
-    --dark-icon-button-color-active: #C9F76F;
-    --dark-icon-button-color-error: #e33;
-    --dark-icon-button-color-hover: #eee;
+	--dark-icon-button-color-normal: #aaa;
+	--dark-icon-button-color-disabled: #555;
+	--dark-icon-button-color-active: #c9f76f;
+	--dark-icon-button-color-error: #e33;
+	--dark-icon-button-color-hover: #eee;
 
-    --dark-title-h1-color: #fff;
-    --dark-title-h2-color: #eee;
-    --dark-title-h3-color: #ccc;
-    --dark-title-h4-color: #ccc;
-    --dark-title-h5-color: #ccc;
-    --dark-title-h6-color: #ccc;
-    --dark-main-text-color: #aaa;
-    --dark-accent-text-color: #C9F76F;
-    --dark-error-text-color: #e33;
-    --dark-pale-text-color: #777;
+	--dark-title-h1-color: #fff;
+	--dark-title-h2-color: #eee;
+	--dark-title-h3-color: #ccc;
+	--dark-title-h4-color: #ccc;
+	--dark-title-h5-color: #ccc;
+	--dark-title-h6-color: #ccc;
+	--dark-main-text-color: #aaa;
+	--dark-accent-text-color: #c9f76f;
+	--dark-error-text-color: #e33;
+	--dark-pale-text-color: #777;
 
-    /* Светлая тема */
-    --light-bg-base-color: #fff;
+	/* Светлая тема */
+	--light-bg-base-color: #fff;
 
-    --light-bg-main-color-n100: #aaa;
-    --light-bg-main-color-0: #ccc;
-    --light-bg-main-color-p100: #ddd;
-    --light-bg-main-color-p200: #eee;
+	--light-bg-main-color-n100: #aaa;
+	--light-bg-main-color-0: #ccc;
+	--light-bg-main-color-p100: #ddd;
+	--light-bg-main-color-p200: #eee;
 
-    --light-icon-color-main: #555;
-    --light-icon-color-accent: #333;
-    --light-icon-color-error: #e33;
+	--light-icon-color-main: #555;
+	--light-icon-color-accent: #333;
+	--light-icon-color-error: #e33;
 
-    --light-icon-button-color-normal: #555;
-    --light-icon-button-color-disabled: #444;
-    --light-icon-button-color-active: #333;
-    --light-icon-button-color-error: #e33;
-    --light-icon-button-color-hover: #111;
+	--light-icon-button-color-normal: #555;
+	--light-icon-button-color-disabled: #444;
+	--light-icon-button-color-active: #333;
+	--light-icon-button-color-error: #e33;
+	--light-icon-button-color-hover: #111;
 
-    --light-title-h1-color: #000;
-    --light-title-h2-color: #222;
-    --light-title-h3-color: #333;
-    --light-title-h4-color: #333;
-    --light-title-h5-color: #333;
-    --light-title-h6-color: #333;
-    --light-main-text-color: #555;
-    --light-accent-text-color: #6f6;
-    --light-error-text-color: #e33;
-    --light-pale-text-color: #777;
+	--light-title-h1-color: #000;
+	--light-title-h2-color: #222;
+	--light-title-h3-color: #333;
+	--light-title-h4-color: #333;
+	--light-title-h5-color: #333;
+	--light-title-h6-color: #333;
+	--light-main-text-color: #555;
+	--light-accent-text-color: #6f6;
+	--light-error-text-color: #e33;
+	--light-pale-text-color: #777;
 }
 
-:root[data-theme="dark"] {
-    --bg-base-color: var(--dark-bg-base-color);
+:root[data-theme='dark'] {
+	--bg-base-color: var(--dark-bg-base-color);
 
-    --bg-main-color-n100: var(--dark-bg-main-color-n100);
-    --bg-main-color-0: var(--dark-bg-main-color-0);
-    --bg-main-color-p100: var(--dark-bg-main-color-p100);
-    --bg-main-color-p200: var(--dark-bg-main-color-p200);
+	--bg-main-color-n100: var(--dark-bg-main-color-n100);
+	--bg-main-color-0: var(--dark-bg-main-color-0);
+	--bg-main-color-p100: var(--dark-bg-main-color-p100);
+	--bg-main-color-p200: var(--dark-bg-main-color-p200);
 
-    --icon-color-main: var(--dark-icon-color-main);
-    --icon-color-accent: var(--dark-icon-color-accent);
-    --icon-color-error: var(--dark-icon-color-error);
+	--icon-color-main: var(--dark-icon-color-main);
+	--icon-color-accent: var(--dark-icon-color-accent);
+	--icon-color-error: var(--dark-icon-color-error);
 
-    --icon-button-color-normal: var(--dark-icon-button-color-normal);
-    --icon-button-color-disabled: var(--dark-icon-button-color-disabled);
-    --icon-button-color-active: var(--dark-icon-button-color-active);
-    --icon-button-color-error: var(--dark-icon-button-color-error);
-    --icon-button-color-hover: var(--dark-icon-button-color-hover);
+	--icon-button-color-normal: var(--dark-icon-button-color-normal);
+	--icon-button-color-disabled: var(--dark-icon-button-color-disabled);
+	--icon-button-color-active: var(--dark-icon-button-color-active);
+	--icon-button-color-error: var(--dark-icon-button-color-error);
+	--icon-button-color-hover: var(--dark-icon-button-color-hover);
 
-    --title-h1-color: var(--dark-title-h1-color);
-    --title-h2-color: var(--dark-title-h2-color);
-    --title-h3-color: var(--dark-title-h3-color);
-    --title-h4-color: var(--dark-title-h4-color);
-    --title-h5-color: var(--dark-title-h5-color);
-    --title-h6-color: var(--dark-title-h6-color);
-    --main-text-color: var(--dark-main-text-color);
-    --accent-text-color: var(--dark-accent-text-color);
-    --error-text-color: var(--dark-error-text-color);
-    --pale-text-color: var(--dark-pale-text-color);
+	--title-h1-color: var(--dark-title-h1-color);
+	--title-h2-color: var(--dark-title-h2-color);
+	--title-h3-color: var(--dark-title-h3-color);
+	--title-h4-color: var(--dark-title-h4-color);
+	--title-h5-color: var(--dark-title-h5-color);
+	--title-h6-color: var(--dark-title-h6-color);
+	--main-text-color: var(--dark-main-text-color);
+	--accent-text-color: var(--dark-accent-text-color);
+	--error-text-color: var(--dark-error-text-color);
+	--pale-text-color: var(--dark-pale-text-color);
 }
 
-:root[data-theme="light"] {
-    --bg-base-color: var(--light-bg-base-color);
+:root[data-theme='light'] {
+	--bg-base-color: var(--light-bg-base-color);
 
-    --bg-main-color-n100: var(--light-bg-main-color-n100);
-    --bg-main-color-0: var(--light-bg-main-color-0);
-    --bg-main-color-p100: var(--light-bg-main-color-p100);
-    --bg-main-color-p200: var(--light-bg-main-color-p200);
+	--bg-main-color-n100: var(--light-bg-main-color-n100);
+	--bg-main-color-0: var(--light-bg-main-color-0);
+	--bg-main-color-p100: var(--light-bg-main-color-p100);
+	--bg-main-color-p200: var(--light-bg-main-color-p200);
 
-    --icon-color-main: var(--light-icon-color-main);
-    --icon-color-accent: var(--light-icon-color-accent);
-    --icon-color-error: var(--light-icon-color-error);
+	--icon-color-main: var(--light-icon-color-main);
+	--icon-color-accent: var(--light-icon-color-accent);
+	--icon-color-error: var(--light-icon-color-error);
 
-    --icon-button-color-normal: var(--light-icon-button-color-normal);
-    --icon-button-color-disabled: var(--light-icon-button-color-disabled);
-    --icon-button-color-active: var(--light-icon-button-color-active);
-    --icon-button-color-error: var(--light-icon-button-color-error);
-    --icon-button-color-hover: var(--light-icon-button-color-hover);
+	--icon-button-color-normal: var(--light-icon-button-color-normal);
+	--icon-button-color-disabled: var(--light-icon-button-color-disabled);
+	--icon-button-color-active: var(--light-icon-button-color-active);
+	--icon-button-color-error: var(--light-icon-button-color-error);
+	--icon-button-color-hover: var(--light-icon-button-color-hover);
 
-    --title-h1-color: var(--light-title-h1-color);
-    --title-h2-color: var(--light-title-h2-color);
-    --title-h3-color: var(--light-title-h3-color);
-    --title-h4-color: var(--light-title-h4-color);
-    --title-h5-color: var(--light-title-h5-color);
-    --title-h6-color: var(--light-title-h6-color);
-    --main-text-color: var(--light-main-text-color);
-    --accent-text-color: var(--light-accent-text-color);
-    --error-text-color: var(--light-error-text-color);
-    --pale-text-color: var(--light-pale-text-color);
+	--title-h1-color: var(--light-title-h1-color);
+	--title-h2-color: var(--light-title-h2-color);
+	--title-h3-color: var(--light-title-h3-color);
+	--title-h4-color: var(--light-title-h4-color);
+	--title-h5-color: var(--light-title-h5-color);
+	--title-h6-color: var(--light-title-h6-color);
+	--main-text-color: var(--light-main-text-color);
+	--accent-text-color: var(--light-accent-text-color);
+	--error-text-color: var(--light-error-text-color);
+	--pale-text-color: var(--light-pale-text-color);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root[data-theme="auto"] {
-        --bg-base-color: var(--dark-bg-base-color);
+	:root[data-theme='auto'] {
+		--bg-base-color: var(--dark-bg-base-color);
 
-        --bg-main-color-n100: var(--dark-bg-main-color-n100);
-        --bg-main-color-0: var(--dark-bg-main-color-0);
-        --bg-main-color-p100: var(--dark-bg-main-color-p100);
-        --bg-main-color-p200: var(--dark-bg-main-color-p200);
+		--bg-main-color-n100: var(--dark-bg-main-color-n100);
+		--bg-main-color-0: var(--dark-bg-main-color-0);
+		--bg-main-color-p100: var(--dark-bg-main-color-p100);
+		--bg-main-color-p200: var(--dark-bg-main-color-p200);
 
-        --icon-color-main: var(--dark-icon-color-main);
-        --icon-color-accent: var(--dark-icon-color-accent);
-        --icon-color-error: var(--dark-icon-color-error);
+		--icon-color-main: var(--dark-icon-color-main);
+		--icon-color-accent: var(--dark-icon-color-accent);
+		--icon-color-error: var(--dark-icon-color-error);
 
-        --icon-button-color-normal: var(--dark-icon-button-color-normal);
-        --icon-button-color-disabled: var(--dark-icon-button-color-disabled);
-        --icon-button-color-active: var(--dark-icon-button-color-active);
-        --icon-button-color-error: var(--dark-icon-button-color-error);
-        --icon-button-color-hover: var(--dark-icon-button-color-hover);
+		--icon-button-color-normal: var(--dark-icon-button-color-normal);
+		--icon-button-color-disabled: var(--dark-icon-button-color-disabled);
+		--icon-button-color-active: var(--dark-icon-button-color-active);
+		--icon-button-color-error: var(--dark-icon-button-color-error);
+		--icon-button-color-hover: var(--dark-icon-button-color-hover);
 
-        --title-h1-color: var(--dark-title-h1-color);
-        --title-h2-color: var(--dark-title-h2-color);
-        --title-h3-color: var(--dark-title-h3-color);
-        --title-h4-color: var(--dark-title-h4-color);
-        --title-h5-color: var(--dark-title-h5-color);
-        --title-h6-color: var(--dark-title-h6-color);
-        --main-text-color: var(--dark-main-text-color);
-        --accent-text-color: var(--dark-accent-text-color);
-        --error-text-color: var(--dark-error-text-color);
-        --pale-text-color: var(--dark-pale-text-color);
-    }
+		--title-h1-color: var(--dark-title-h1-color);
+		--title-h2-color: var(--dark-title-h2-color);
+		--title-h3-color: var(--dark-title-h3-color);
+		--title-h4-color: var(--dark-title-h4-color);
+		--title-h5-color: var(--dark-title-h5-color);
+		--title-h6-color: var(--dark-title-h6-color);
+		--main-text-color: var(--dark-main-text-color);
+		--accent-text-color: var(--dark-accent-text-color);
+		--error-text-color: var(--dark-error-text-color);
+		--pale-text-color: var(--dark-pale-text-color);
+	}
 }
 
 @media (prefers-color-scheme: light) {
-    :root[data-theme="auto"] {
-        --bg-base-color: var(--light-bg-base-color);
+	:root[data-theme='auto'] {
+		--bg-base-color: var(--light-bg-base-color);
 
-        --bg-main-color-n100: var(--light-bg-main-color-n100);
-        --bg-main-color-0: var(--light-bg-main-color-0);
-        --bg-main-color-p100: var(--light-bg-main-color-p100);
-        --bg-main-color-p200: var(--light-bg-main-color-p200);
+		--bg-main-color-n100: var(--light-bg-main-color-n100);
+		--bg-main-color-0: var(--light-bg-main-color-0);
+		--bg-main-color-p100: var(--light-bg-main-color-p100);
+		--bg-main-color-p200: var(--light-bg-main-color-p200);
 
-        --icon-color-main: var(--light-icon-color-main);
-        --icon-color-accent: var(--light-icon-color-accent);
-        --icon-color-error: var(--light-icon-color-error);
+		--icon-color-main: var(--light-icon-color-main);
+		--icon-color-accent: var(--light-icon-color-accent);
+		--icon-color-error: var(--light-icon-color-error);
 
-        --icon-button-color-normal: var(--light-icon-button-color-normal);
-        --icon-button-color-disabled: var(--light-icon-button-color-disabled);
-        --icon-button-color-active: var(--light-icon-button-color-active);
-        --icon-button-color-error: var(--light-icon-button-color-error);
-        --icon-button-color-hover: var(--light-icon-button-color-hover);
+		--icon-button-color-normal: var(--light-icon-button-color-normal);
+		--icon-button-color-disabled: var(--light-icon-button-color-disabled);
+		--icon-button-color-active: var(--light-icon-button-color-active);
+		--icon-button-color-error: var(--light-icon-button-color-error);
+		--icon-button-color-hover: var(--light-icon-button-color-hover);
 
-        --title-h1-color: var(--light-title-h1-color);
-        --title-h2-color: var(--light-title-h2-color);
-        --title-h3-color: var(--light-title-h3-color);
-        --title-h4-color: var(--light-title-h4-color);
-        --title-h5-color: var(--light-title-h5-color);
-        --title-h6-color: var(--light-title-h6-color);
-        --main-text-color: var(--light-main-text-color);
-        --accent-text-color: var(--light-accent-text-color);
-        --error-text-color: var(--light-error-text-color);
-        --pale-text-color: var(--light-pale-text-color);
-    }
+		--title-h1-color: var(--light-title-h1-color);
+		--title-h2-color: var(--light-title-h2-color);
+		--title-h3-color: var(--light-title-h3-color);
+		--title-h4-color: var(--light-title-h4-color);
+		--title-h5-color: var(--light-title-h5-color);
+		--title-h6-color: var(--light-title-h6-color);
+		--main-text-color: var(--light-main-text-color);
+		--accent-text-color: var(--light-accent-text-color);
+		--error-text-color: var(--light-error-text-color);
+		--pale-text-color: var(--light-pale-text-color);
+	}
 }

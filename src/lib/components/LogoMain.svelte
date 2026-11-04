@@ -11,8 +11,8 @@
 
 <style>
 	.padding {
-        margin-top: 0.2em;
-        padding-left: 5em;
-        font-size: var(--h1-font-size);
+		margin-top: 0.2em;
+		padding-left: 5em;
+		font-size: var(--h1-font-size);
 	}
 </style>

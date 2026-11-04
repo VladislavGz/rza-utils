@@ -1,15 +1,15 @@
 /* Файл для подключения шрифтов */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(../assets/fonts/Roboto-Variable/Roboto-VariableFont.ttf);
-    font-weight: normal;
-    font-display: swap;
+	font-family: 'Roboto';
+	src: url(../assets/fonts/Roboto-Variable/Roboto-VariableFont.ttf);
+	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Press-Start-2P';
-    src: url(../assets/fonts/Press-Start-2P/PressStart2P-Regular.ttf);
-    font-weight: normal;
-    font-display: swap;
+	font-family: 'Press-Start-2P';
+	src: url(../assets/fonts/Press-Start-2P/PressStart2P-Regular.ttf);
+	font-weight: normal;
+	font-display: swap;
 }
