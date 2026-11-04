@@ -2,13 +2,20 @@
 	import type { Snippet } from 'svelte';
 
 	type TIconProps = {
+		strokeWidth?: number;
 		children: Snippet;
 	};
 
-	const { children }: TIconProps = $props();
+	const { strokeWidth = 4, children }: TIconProps = $props();
+
+	const attach = (element: HTMLSpanElement) => {
+		if (strokeWidth) {
+			element.style.strokeWidth = `${strokeWidth}`;
+		}
+	};
 </script>
 
-<span class="instrument-icon">
+<span {@attach attach} class="instrument-icon">
 	{@render children?.()}
 </span>
 
@@ -16,12 +23,12 @@
 	.instrument-icon {
 		display: block;
 		pointer-events: none;
-        width: 100%;
-        height: 100%;
+		width: 100%;
+		height: 100%;
 
 		color: var(--icon-color-main);
 		fill: var(--icon-color-main);
 		stroke: var(--icon-color-main);
-        stroke-width: 4;
+		stroke-width: 4;
 	}
 </style>
