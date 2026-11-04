@@ -2,7 +2,8 @@
 
 :root {
     /* Шрифты */
-    --accent-font: 'Press-Start-2P', monospace;
+    --logo-font: 'Press-Start-2P', monospace;
+    --accent-font: monospace;
     --main-font: 'Roboto', sans-serif;
 
     /* Темная тема */
@@ -32,6 +33,7 @@
     --dark-main-text-color: #aaa;
     --dark-accent-text-color: #C9F76F;
     --dark-error-text-color: #e33;
+    --dark-pale-text-color: #777;
 
     /* Светлая тема */
     --light-bg-base-color: #fff;
@@ -60,6 +62,7 @@
     --light-main-text-color: #555;
     --light-accent-text-color: #6f6;
     --light-error-text-color: #e33;
+    --light-pale-text-color: #777;
 }
 
 :root[data-theme="dark"] {
@@ -89,6 +92,7 @@
     --main-text-color: var(--dark-main-text-color);
     --accent-text-color: var(--dark-accent-text-color);
     --error-text-color: var(--dark-error-text-color);
+    --pale-text-color: var(--dark-pale-text-color);
 }
 
 :root[data-theme="light"] {
@@ -116,8 +120,9 @@
     --title-h5-color: var(--light-title-h5-color);
     --title-h6-color: var(--light-title-h6-color);
     --main-text-color: var(--light-main-text-color);
-    --accent-text-color: var(var(--light-accent-text-color));
+    --accent-text-color: var(--light-accent-text-color);
     --error-text-color: var(--light-error-text-color);
+    --pale-text-color: var(--light-pale-text-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -148,6 +153,7 @@
         --main-text-color: var(--dark-main-text-color);
         --accent-text-color: var(--dark-accent-text-color);
         --error-text-color: var(--dark-error-text-color);
+        --pale-text-color: var(--dark-pale-text-color);
     }
 }
 
@@ -177,7 +183,8 @@
         --title-h5-color: var(--light-title-h5-color);
         --title-h6-color: var(--light-title-h6-color);
         --main-text-color: var(--light-main-text-color);
-        --accent-text-color: var(var(--light-accent-text-color));
+        --accent-text-color: var(--light-accent-text-color);
         --error-text-color: var(--light-error-text-color);
+        --pale-text-color: var(--light-pale-text-color);
     }
 }
