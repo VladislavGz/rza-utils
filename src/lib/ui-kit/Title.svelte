@@ -40,6 +40,7 @@
 <style>
 	.title {
         display: block;
+        text-align: center;
         
 		&._font-main {
 			font-family: var(--main-font);
