@@ -10,7 +10,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		idName: 'vah-viewer',
 		name: 'Просмотр ВАХ',
 		description:
-			'Этот инструмент позволяет просматривать вольт-амперные характеристики в нативном формате РЕТОМ 21 (.r21_transl)',
+			'Просмотр вольт-амперных характеристик в формате .r21_transl',
 		link: '/vah-viewer',
 		icon: VahSVG,
 		iconStrokeWidth: 20,
@@ -19,7 +19,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 	{
 		idName: 'osc-viewer',
 		name: 'Просмотр осциллограмм',
-		description: 'Этот инструмент позволяет просматривать осциллограммы в различных форматах',
+		description: 'Просмотр осциллограмм в различных форматах',
 		link: '/osc-viewer',
 		icon: SineSVG,
 		iconStrokeWidth: 10,
@@ -28,7 +28,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 	{
 		idName: 'symmetric-components-calculator',
 		name: 'Калькулятор симметричных составляющих',
-		description: '',
+		description: 'Расчет и визуализация симметричных составляющих на основе фазных значений',
 		link: '/symmetric-components-calculator',
 		icon: SymmetricSVG,
 		iconStrokeWidth: 6,
