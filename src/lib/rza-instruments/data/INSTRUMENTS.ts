@@ -12,7 +12,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		description:
 			'Этот инструмент позволяет просматривать вольт-амперные характеристики в нативном формате РЕТОМ 21 (.r21_transl)',
 		link: '/vah-viewer',
-		icon: VahSVG
+		icon: VahSVG,
+		iconStrokeWidth: 20,
 	},
 
 	{
@@ -20,7 +21,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		name: 'Просмотр осциллограмм',
 		description: 'Этот инструмент позволяет просматривать осциллограммы в различных форматах',
 		link: '/osc-viewer',
-		icon: SineSVG
+		icon: SineSVG,
+		iconStrokeWidth: 10,
 	},
 
 	{
@@ -28,7 +30,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		name: 'Калькулятор симметричных составляющих',
 		description: '',
 		link: '/symmetric-components-calculator',
-		icon: SymmetricSVG
+		icon: SymmetricSVG,
+		iconStrokeWidth: 6,
 	},
 
 	{
@@ -36,7 +39,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		name: 'Векторные диаграммы',
 		description: 'Памятка по векторным диаграммам для типичных видов повреждений',
 		link: '/vector-diagrams',
-		icon: KzVectorsSVG
+		icon: KzVectorsSVG,
+		iconStrokeWidth: 6,
 	},
 
 	{
@@ -44,6 +48,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		name: 'Калькулятор вторичных величин',
 		description: 'Пересчет первичных значений тока, напряжения, сопротивления и мощности во вторичные и наоборот',
 		link: '/transform-calc',
-		icon: TransformSVG
+		icon: TransformSVG,
+		iconStrokeWidth: 1,
 	},
 ];
