@@ -54,6 +54,24 @@
     color: var(--accent-text-color);
 }
 
+.g-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.g-common-wrapper {
+    margin-inline: auto;
+    max-width: 1024px;
+    padding-inline: 12px;
+}
+
 .g-scrollable-v {
     &::-webkit-scrollbar {
         width: 16px;
