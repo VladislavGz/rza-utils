@@ -48,5 +48,9 @@
 		&._font-accent {
 			font-family: var(--accent-font);
 		}
+
+        &._font-logo {
+            font-family: var(--logo-font);
+        }
 	}
 </style>
