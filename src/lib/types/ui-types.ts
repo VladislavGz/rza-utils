@@ -6,7 +6,7 @@ export type TTitleLevel = 1 | 2 | 3 | 4 | 5 | 6;
 /**
  * Тип шрифта
  */
-export type TFont = 'accent' | 'main';
+export type TFont = 'logo' | 'accent' | 'main';
 
 /**
  * Тип размеров UI
