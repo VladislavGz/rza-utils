@@ -1,3 +1,5 @@
+import type { Component } from "svelte";
+
 /**
  * Описание утилиты
  */
@@ -6,6 +8,7 @@ export type TUtilDescription = {
 	name: string;
 	description: string;
 	link: string;
+	icon: Component
 };
 
 /**
