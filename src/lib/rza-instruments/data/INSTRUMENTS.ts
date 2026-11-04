@@ -5,7 +5,7 @@ import SymmetricSVG from "./icons/SymmetricSVG.svelte";
 import TransformSVG from "./icons/TransformSVG.svelte";
 import VahSVG from "./icons/VahSVG.svelte";
 
-export const UTILS_LIST: TUtilDescription[] = [
+export const INSTRUMENTS: TUtilDescription[] = [
 	{
 		idName: 'vah-viewer',
 		name: 'Просмотр ВАХ',
