@@ -32,10 +32,19 @@
 
 		display: grid;
 		grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
 
 		border-radius: 26px;
 		border: 2px solid var(--pale-text-color);
 		border-style: dashed;
+
+        transition: border-color .2s ease-in;
+
+        &:hover {
+            border-color: var(--title-h1-color);
+        }
 	}
 
 	.icon-container {
