@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { TUtilDescription } from '#lib/types/types.ts';
-	import Paragraph from '#lib/ui-kit/Paragraph.svelte';
 	import Title from '#lib/ui-kit/Title.svelte';
 	import InstrumentIcon from './InstrumentIcon.svelte';
 
@@ -20,8 +19,7 @@
 				<Icon />
 			</InstrumentIcon>
 		</div>
-
-		<Paragraph>{instrument.description}</Paragraph>
+        <p class="g-main-text description">{instrument.description}</p>
 	</article>
 </a>
 
@@ -44,4 +42,8 @@
 		width: 200px;
 		aspect-ratio: 1;
 	}
+
+    .description {
+        text-align: center;
+    }
 </style>
