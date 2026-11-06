@@ -12,7 +12,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		description: 'Просмотр вольт-амперных характеристик в формате .r21_transl',
 		link: '/vah-viewer',
 		icon: VahSVG,
-		iconStrokeWidth: 20
+		iconStrokeWidth: 2
 	},
 
 	{
@@ -21,7 +21,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		description: 'Просмотр осциллограмм в различных форматах',
 		link: '/osc-viewer',
 		icon: SineSVG,
-		iconStrokeWidth: 10
+		iconStrokeWidth: 2
 	},
 
 	{
@@ -30,7 +30,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		description: 'Расчет и визуализация симметричных составляющих на основе фазных значений',
 		link: '/symmetric-components-calculator',
 		icon: SymmetricSVG,
-		iconStrokeWidth: 6
+		iconStrokeWidth: 2
 	},
 
 	{
@@ -39,7 +39,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 		description: 'Памятка по векторным диаграммам для типичных видов повреждений',
 		link: '/vector-diagrams',
 		icon: KzVectorsSVG,
-		iconStrokeWidth: 6
+		iconStrokeWidth: 2
 	},
 
 	{
@@ -49,6 +49,6 @@ export const INSTRUMENTS: TUtilDescription[] = [
 			'Пересчет первичных значений тока, напряжения, сопротивления и мощности во вторичные и наоборот',
 		link: '/transform-calc',
 		icon: TransformSVG,
-		iconStrokeWidth: 1
+		iconStrokeWidth: 2
 	}
 ];
