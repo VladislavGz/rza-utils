@@ -12,21 +12,20 @@
 		<LogoMain />
 		<ThemeButton size="large" />
 	</div>
-	<div class="line"></div>
 </header>
 
 <style>
+    .header-main {
+        width: 100%;
+    }
+
 	.wrapper {
 		padding-block: 26px;
 
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
 
-	.line {
-		border-color: transparent;
-		border-bottom: 6px solid var(--title-h1-color);
-		border-style: dashed;
+        border-bottom: 6px dashed var(--title-h1-color);
 	}
 </style>
