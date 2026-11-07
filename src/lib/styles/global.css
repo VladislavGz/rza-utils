@@ -54,6 +54,11 @@
 	color: var(--accent-text-color);
 }
 
+.g-link {
+	font-size: var(--main-font-size);
+	color: var(--main-text-color);
+}
+
 .g-visually-hidden {
 	position: absolute;
 	width: 1px;
