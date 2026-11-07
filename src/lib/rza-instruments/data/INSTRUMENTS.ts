@@ -9,7 +9,7 @@ export const INSTRUMENTS: TUtilDescription[] = [
 	{
 		idName: 'vah-viewer',
 		name: 'Просмотр вольт-амперных характеристик',
-		description: 'Просмотр вольт-амперных характеристик в формате .r21_transl',
+		description: 'Инструмент для просмотра вольт-амперных характеристик в формате .r21_transl',
 		link: '/vah-viewer',
 		icon: VahSVG,
 		iconStrokeWidth: 2
@@ -17,8 +17,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 
 	{
 		idName: 'osc-viewer',
-		name: 'Просмотр осциллограмм',
-		description: 'Просмотр осциллограмм в различных форматах',
+		name: 'Просмотр и анализ осциллограмм',
+		description: 'Инструмент для просмотра и анализа файлов осциллограмм в различных форматах',
 		link: '/osc-viewer',
 		icon: SineSVG,
 		iconStrokeWidth: 2
