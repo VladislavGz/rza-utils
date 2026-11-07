@@ -5,7 +5,7 @@
 	import { INSTRUMENTS } from '#lib/rza-instruments/data/INSTRUMENTS.ts';
 </script>
 
-<div class="g-common-wrapper">
+<div class="page">
 	<HeaderMain />
 	<div class="g-common-wrapper">
 		<ul class="instruments-list">
@@ -20,13 +20,17 @@
 </div>
 
 <style>
-	.instruments-list {
-		margin-top: 26px;
+    .page {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
 
+	.instruments-list {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 30px;
+		gap: 26px;
 	}
 </style>
