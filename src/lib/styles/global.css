@@ -65,7 +65,7 @@
 		display: block;
 		width: 0;
 
-		border-top: 1px solid var(--title-h3-color);;
+		border-top: 2px solid var(--title-h3-color);;
 
 		transition: width .3s ease-in-out;
 	}
