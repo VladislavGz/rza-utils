@@ -19,7 +19,7 @@
 				<Icon />
 			</InstrumentIcon>
 		</div>
-        <p class="g-main-text description">{instrument.description}</p>
+        <p class="g-minimal-text description">{instrument.description}</p>
 	</article>
 </a>
 
