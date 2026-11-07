@@ -8,7 +8,7 @@ import VahSVG from './icons/VahSVG.svelte';
 export const INSTRUMENTS: TUtilDescription[] = [
 	{
 		idName: 'vah-viewer',
-		name: 'Просмотр ВАХ',
+		name: 'Просмотр вольт-амперных характеристик',
 		description: 'Просмотр вольт-амперных характеристик в формате .r21_transl',
 		link: '/vah-viewer',
 		icon: VahSVG,
@@ -35,8 +35,8 @@ export const INSTRUMENTS: TUtilDescription[] = [
 
 	{
 		idName: 'vector-diagrams',
-		name: 'Векторные диаграммы',
-		description: 'Памятка по векторным диаграммам для типичных видов повреждений',
+		name: 'Памятка по векторным диаграммам',
+		description: 'Интерактивные векторные диаграммы для типичных видов повреждений',
 		link: '/vector-diagrams',
 		icon: KzVectorsSVG,
 		iconStrokeWidth: 2
