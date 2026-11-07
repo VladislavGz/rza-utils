@@ -53,6 +53,7 @@
 	}
 
     .description {
+        font-family: var(--main-font);
         text-align: center;
     }
 </style>
