@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+<svg class="g-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
 	<text
 		x="0"
 		y="0"

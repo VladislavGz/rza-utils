@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+<svg class="g-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
 	<path
 		d="M -86.6 -10.584
        C -81.789 -22.958 -76.981 -34.865 -72.17 -44.878
