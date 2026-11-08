@@ -1,4 +1,5 @@
 <script lang="ts">
+	import FooterCommon from '#lib/components/FooterCommon.svelte';
 	import HeaderCommon from '#lib/components/HeaderCommon.svelte';
 	import type { LayoutProps } from '../$types';
 
@@ -7,3 +8,4 @@
 
 <HeaderCommon />
 {@render children()}
+<FooterCommon />
