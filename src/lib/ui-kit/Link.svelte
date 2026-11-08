@@ -3,15 +3,16 @@
 	import type { Snippet } from 'svelte';
 
 	type TLinkProps = {
+		useDecoration?: boolean;
 		font?: TFont;
 		href: string;
 		children: Snippet;
 	};
 
-	const { font = 'main', href, children }: TLinkProps = $props();
+	const { useDecoration = true, font = 'main', href, children }: TLinkProps = $props();
 </script>
 
-<a {href} class="g-link link _font-{font}">
+<a {href} class="g-link link _font-{font} {useDecoration ? '_decoration' : null}">
 	{@render children()}
 </a>
 
@@ -29,16 +30,18 @@
 			font-family: var(--logo-font);
 		}
 
-		&::after {
-			margin: auto;
-			margin-top: 2px;
-			content: '';
-			display: block;
-			width: 0;
+		&._decoration {
+			&::after {
+				margin: auto;
+				margin-top: 2px;
+				content: '';
+				display: block;
+				width: 0;
 
-			border-top: 2px solid var(--title-h3-color);
+				border-top: 2px solid var(--title-h3-color);
 
-			transition: width 0.3s ease-in-out;
+				transition: width 0.3s ease-in-out;
+			}
 		}
 
 		&:hover {
