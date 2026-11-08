@@ -13,16 +13,15 @@
 <style>
 	.footer-main {
 		width: 100%;
-		
 	}
 
-    .wrapper {
-        padding-block: 26px;
+	.wrapper {
+		padding-block: 26px;
 
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 
 		border-top: 1px solid var(--pale-text-color);
-    }
+	}
 </style>
