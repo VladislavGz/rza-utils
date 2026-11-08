@@ -85,11 +85,11 @@
 	});
 </script>
 
-<p class="scrambled-text" aria-label={text}>
+<span class="scrambled-text" aria-label={text}>
 	{#each chars as char}
 		<span class:scrambled={!char.isResolved}>{char.current}</span>
 	{/each}
-</p>
+</span>
 
 <style>
 	.scrambled-text {
