@@ -27,12 +27,13 @@
 	.number-input-field {
 		display: grid;
         grid-template-columns: 1fr 4fr;
+        align-items: center;
         gap: 10px;
 	}
 
 	.input-field-label {
 		color: var(--main-text-color);
-		font-family: monospace;
+		font-family: var(--main-font);
 		font-size: var(--main-font-size);
 	}
 
@@ -42,6 +43,7 @@
 
 		font-family: var(--main-font);
 		color: var(--main-text-color);
+        font-size: var(--main-font-size);
 
 		outline: none;
 		border: none;
