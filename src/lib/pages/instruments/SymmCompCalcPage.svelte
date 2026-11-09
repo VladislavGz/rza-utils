@@ -1,16 +1,21 @@
 <script>
+	import FooterCommon from '#lib/components/FooterCommon.svelte';
 	import HeaderCommon from '#lib/components/HeaderCommon.svelte';
 	import SymmCompCalc from '#lib/rza-instruments/symmetric-components-calculator/SymmCompCalc.svelte';
 </script>
 
-<HeaderCommon />
-<div class="g-common-wrapper wrapper">
-    <SymmCompCalc />
+<div class="wrapper">
+	<HeaderCommon />
+	<div class="g-common-wrapper">
+		<SymmCompCalc />
+	</div>
+	<FooterCommon />
 </div>
 
 <style>
-    .wrapper {
-        margin-top: 12px;
-    }
+	.wrapper {
+		display: flex;
+        flex-direction: column;
+        gap: 26px;
+	}
 </style>
-
