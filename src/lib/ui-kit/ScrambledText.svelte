@@ -95,7 +95,7 @@
 	.scrambled-text {
 		color: var(--title-h1-color);
 		font-family: var(--logo-font);
-		font-size: var(--h1-font-size);
+		font-size: var(--logo-main-font-size);
 		letter-spacing: 10px;
 	}
 
