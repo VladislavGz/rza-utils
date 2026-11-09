@@ -48,8 +48,9 @@
 	}
 
 	.field-name {
+        color: var(--main-text-color);
 		font-family: var(--main-font);
-		color: var(--main-text-color);
+		font-size: var(--main-font-size);
 	}
 
 	.wrapper {
