@@ -14,3 +14,12 @@ export type TThreePhaseSystem = {
     phaseB: TComplex;
     phaseC: TComplex;
 }
+
+/**
+ * Система симметричных составляющих
+ */
+export type TSymmetricalComponentsSystem = {
+    A1: TComplex;
+    A2: TComplex;
+    A0: TComplex;
+}
