@@ -2,8 +2,8 @@
 
 :root {
 	/* Настройки для ПК */
-	--desctop-h1-font-size: 32px;
-	--desctop-h2-font-size: 24px;
+	--desctop-h1-font-size: 22px;
+	--desctop-h2-font-size: 20px;
 	--desctop-h3-font-size: 18px;
 	--desctop-h4-font-size: 16px;
 	--desctop-h5-font-size: 16px;
@@ -26,8 +26,8 @@
 	--desktop-icon-button-size-large: 56px;
 
 	/* Настройки для планшетов */
-	--tablet-h1-font-size: 28px;
-	--tablet-h2-font-size: 20px;
+	--tablet-h1-font-size: 20px;
+	--tablet-h2-font-size: 18px;
 	--tablet-h3-font-size: 16px;
 	--tablet-h4-font-size: 14px;
 	--tablet-h5-font-size: 14px;
@@ -50,8 +50,8 @@
 	--tablet-icon-button-size-large: 56px;
 
 	/* Настройки для мобильных */
-	--mobile-h1-font-size: 24px;
-	--mobile-h2-font-size: 18px;
+	--mobile-h1-font-size: 18px;
+	--mobile-h2-font-size: 16px;
 	--mobile-h3-font-size: 14px;
 	--mobile-h4-font-size: 12px;
 	--mobile-h5-font-size: 12px;
