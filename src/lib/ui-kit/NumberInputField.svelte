@@ -15,7 +15,7 @@
 	<input
 		type="number"
 		class="input"
-		{value}
+		value={value.toFixed(3)}
 		oninput={(e) => {
 			const input = e.target as HTMLInputElement;
 			oninput(Number(input.value));
