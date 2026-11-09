@@ -7,6 +7,14 @@ export type TComplex = {
 }
 
 /**
+ * Комплексное число в алгебраической форме
+ */
+export type TComplexRect = {
+    re: number;
+    im: number;
+}
+
+/**
  * Трехфазная система
  */
 export type TThreePhaseSystem = {
