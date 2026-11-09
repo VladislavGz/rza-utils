@@ -28,8 +28,6 @@
 		symmetricalSystem[component] = value;
 		phaseSystem = Symmetric.getThreePhaseSystem(symmetricalSystem);
 	};
-
-	$inspect(symmetricalSystem);
 </script>
 
 <Title level={1}>Калькулятор симметричных составляющих</Title>
