@@ -35,12 +35,12 @@ export type TSymmetricalComponentsSystem = {
 /**
  * Режим графики
  */
-type TDrawMode = 'complex';
+export type TDrawMode = 'complex';
 
 /**
  * Объект графики
  */
-type TGraphicLayer = {
+export type TGraphicLayer = {
     cnv: HTMLCanvasElement;
     ctx: CanvasRenderingContext2D;
 }
@@ -48,4 +48,4 @@ type TGraphicLayer = {
 /**
  * Интерактивный слой графики
  */
-type TInteractiveLayer = HTMLDivElement;
+export type TInteractiveLayer = HTMLDivElement;
