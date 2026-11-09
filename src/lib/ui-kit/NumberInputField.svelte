@@ -25,15 +25,12 @@
 
 <style>
 	.number-input-field {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 20px;
+		display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 10px;
 	}
 
 	.input-field-label {
-		display: block;
-
 		color: var(--main-text-color);
 		font-family: monospace;
 		font-size: var(--main-font-size);
