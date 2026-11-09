@@ -2,6 +2,7 @@
 
 :root {
 	/* Настройки для ПК */
+	--desctop-logo-main-font-size: 32px;
 	--desctop-h1-font-size: 22px;
 	--desctop-h2-font-size: 20px;
 	--desctop-h3-font-size: 18px;
@@ -26,6 +27,7 @@
 	--desktop-icon-button-size-large: 56px;
 
 	/* Настройки для планшетов */
+	--tablet-logo-main-font-size: 26px;
 	--tablet-h1-font-size: 20px;
 	--tablet-h2-font-size: 18px;
 	--tablet-h3-font-size: 16px;
@@ -50,6 +52,7 @@
 	--tablet-icon-button-size-large: 56px;
 
 	/* Настройки для мобильных */
+	--mobile-logo-main-font-size: 20px;
 	--mobile-h1-font-size: 18px;
 	--mobile-h2-font-size: 16px;
 	--mobile-h3-font-size: 14px;
@@ -76,6 +79,7 @@
 
 @media (700px <=width) {
 	:root {
+		--logo-main-font-size: var(--desctop-logo-main-font-size);
 		--h1-font-size: var(--desctop-h1-font-size);
 		--h2-font-size: var(--desctop-h2-font-size);
 		--h3-font-size: var(--desctop-h3-font-size);
@@ -103,6 +107,7 @@
 
 @media (550px <=width < 700px) {
 	:root {
+		--logo-main-font-size: var(--tablet-logo-main-font-size);
 		--h1-font-size: var(--tablet-h1-font-size);
 		--h2-font-size: var(--tablet-h2-font-size);
 		--h3-font-size: var(--tablet-h3-font-size);
@@ -130,6 +135,7 @@
 
 @media (width < 550px) {
 	:root {
+		--logo-main-font-size: var(--mobile-logo-main-font-size);
 		--h1-font-size: var(--mobile-h1-font-size);
 		--h2-font-size: var(--mobile-h2-font-size);
 		--h3-font-size: var(--mobile-h3-font-size);
