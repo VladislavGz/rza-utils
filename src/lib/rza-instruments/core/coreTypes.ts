@@ -31,3 +31,21 @@ export type TSymmetricalComponentsSystem = {
     A2: TComplex;
     A0: TComplex;
 }
+
+/**
+ * Режим графики
+ */
+type TDrawMode = 'complex';
+
+/**
+ * Объект графики
+ */
+type TGraphicLayer = {
+    cnv: HTMLCanvasElement;
+    ctx: CanvasRenderingContext2D;
+}
+
+/**
+ * Интерактивный слой графики
+ */
+type TInteractiveLayer = HTMLDivElement;
