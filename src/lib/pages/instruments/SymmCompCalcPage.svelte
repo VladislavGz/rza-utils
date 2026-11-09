@@ -6,7 +6,7 @@
 
 <div class="wrapper">
 	<HeaderCommon />
-	<div class="g-common-wrapper">
+	<div class="g-common-wrapper container">
 		<SymmCompCalc />
 	</div>
 	<FooterCommon />
@@ -18,4 +18,8 @@
         flex-direction: column;
         gap: 26px;
 	}
+
+    .container {
+        width: 100%;
+    }
 </style>
