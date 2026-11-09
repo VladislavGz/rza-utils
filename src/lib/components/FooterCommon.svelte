@@ -2,7 +2,7 @@
 	import Link from "#lib/ui-kit/Link.svelte";
 </script>
 
-<footer class="footer-common">
+<footer class="g-common-wrapper footer-common">
 	<div class="wrapper">
 		<Link href="/privacy-policy">Политика конфиденциальности</Link>
 		<Link href="/about">О проекте</Link>
