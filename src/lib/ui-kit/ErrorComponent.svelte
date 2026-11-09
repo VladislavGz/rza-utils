@@ -22,6 +22,7 @@
 	.error {
 		width: 100%;
 		height: 100%;
+        padding: 12px;
 
         display: flex;
         flex-direction: column;
@@ -31,6 +32,8 @@
 	}
 
 	.message {
+        text-align: center;
+
 		&._font-main {
 			font-family: var(--main-font);
 		}
