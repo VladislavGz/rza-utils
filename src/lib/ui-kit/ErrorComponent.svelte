@@ -1,5 +1,7 @@
 <script lang="ts">
+	import ErrorSVG from '#lib/assets/icons/ErrorSVG.svelte';
 	import type { TFont } from '#lib/types/ui-types.ts';
+	import Icon from './Icon.svelte';
 
 	type TErrorComponentProps = {
 		font?: TFont;
@@ -10,13 +12,22 @@
 </script>
 
 <div class="error">
-	<p class="g-error-text message _font-{font}">{message}</p>
+	<Icon color='main' size='large'>
+		<ErrorSVG />
+	</Icon>
+	<p class="g-main-text message _font-{font}">{message}</p>
 </div>
 
 <style>
 	.error {
 		width: 100%;
 		height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 	}
 
 	.message {
