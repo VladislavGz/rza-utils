@@ -4,4 +4,13 @@
 </script>
 
 <HeaderCommon />
-<SymmCompCalc />
+<div class="g-common-wrapper wrapper">
+    <SymmCompCalc />
+</div>
+
+<style>
+    .wrapper {
+        margin-top: 12px;
+    }
+</style>
+
