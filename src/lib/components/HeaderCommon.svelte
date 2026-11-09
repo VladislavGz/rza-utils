@@ -3,7 +3,7 @@
 	import ThemeButton from './ThemeButton.svelte';
 </script>
 
-<header class="g-common-wrapper">
+<header class="g-common-wrapper header-common">
 	<div class="wrapper">
 		<LogoCommon />
 		<ThemeButton size="medium" />
@@ -11,8 +11,12 @@
 </header>
 
 <style>
+	.header-common {
+		width: 100%;
+	}
+
 	.wrapper {
-        padding-block: 4px;
+		padding-block: 4px;
 
 		display: flex;
 		flex-direction: row;
