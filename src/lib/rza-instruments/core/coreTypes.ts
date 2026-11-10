@@ -68,3 +68,11 @@ export type TCtxPoint = {
     x: number;
     y: number;
 }
+
+/**
+ * Линия в координатах контекста canvas
+ */
+export type TCtxLine = {
+    from: TCtxPoint;
+    to: TCtxPoint;
+}
