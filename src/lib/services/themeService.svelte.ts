@@ -7,7 +7,7 @@ export const themeState: TThemeState = $state({
 /**
  * Функция принимает строку с именем темы и возвращает только
  * разрешенные варианты. Если передан неразрешенный вариант названия
- * темы будет возвращено 'dark'
+ * темы будет возвращено 'auto'
  */
 function normalizeTheme(theme: string): TTheme {
 	if (theme === 'dark' || theme === 'light') return theme;
