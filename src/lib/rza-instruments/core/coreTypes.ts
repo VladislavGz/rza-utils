@@ -33,11 +33,6 @@ export type TSymmetricalComponentsSystem = {
 }
 
 /**
- * Режим графики
- */
-export type TDrawMode = 'complex';
-
-/**
  * Объект графики
  */
 export type TGraphicLayer = {
