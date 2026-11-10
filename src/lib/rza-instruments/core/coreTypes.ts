@@ -60,3 +60,11 @@ export type TComplexDrawerFrame = {
 export type TComplexAxisOrientation = 
     'standart' //стандартная математическая (Re - вправо, Im - вверх)
     | 'alternative'; //повернутая на 90гр. (Re - вверх, Im - влево)
+
+/**
+ * Точка в координатах контекста canvas
+ */
+export type TCtxPoint = {
+    x: number;
+    y: number;
+}
