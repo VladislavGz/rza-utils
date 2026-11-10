@@ -42,8 +42,6 @@ function setNormTheme(normTheme: TTheme) {
  */
 function setTheme(theme: string) {
 	const normTheme = normalizeTheme(theme);
-	if (normTheme === themeState.theme) return;
-
 	setNormTheme(normTheme);
 }
 
