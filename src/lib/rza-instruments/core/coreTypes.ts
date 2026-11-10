@@ -44,3 +44,12 @@ export type TGraphicLayer = {
  * Интерактивный слой графики
  */
 export type TInteractiveLayer = HTMLDivElement;
+
+/**
+ * Объект кадра отрисовки ComplexDrawer
+ */
+export type TComplexDrawerFrame = {
+    vectors: TComplex[];
+    threePhaseSystems: TThreePhaseSystem[];
+    symmetricalComponentsSystems: TSymmetricalComponentsSystem[];
+}
