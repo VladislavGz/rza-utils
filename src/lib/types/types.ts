@@ -13,9 +13,14 @@ export type TUtilDescription = {
 };
 
 /**
+ * Цветовой режим
+ */
+export type TColorMode = 'dark' | 'light';
+
+/**
  * Тема
  */
-export type TTheme = 'dark' | 'light' | 'auto';
+export type TTheme = TColorMode | 'auto';
 
 /**
  * Объект состояния темы
