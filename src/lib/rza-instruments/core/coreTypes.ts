@@ -53,3 +53,10 @@ export type TComplexDrawerFrame = {
     threePhaseSystems: TThreePhaseSystem[];
     symmetricalComponentsSystems: TSymmetricalComponentsSystem[];
 }
+
+/**
+ * Ориентация осей комплексной системы координат
+ */
+export type TComplexAxisOrientation = 
+    'standart' //стандартная математическая (Re - вправо, Im - вверх)
+    | 'alternative'; //повернутая на 90гр. (Re - вверх, Im - влево)
