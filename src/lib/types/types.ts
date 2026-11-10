@@ -27,4 +27,5 @@ export type TTheme = TColorMode | 'auto';
  */
 export type TThemeState = {
 	theme: TTheme;
+	currentColorMode: TColorMode;
 };
