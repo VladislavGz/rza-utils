@@ -1,7 +1,8 @@
 import type { TTheme, TThemeState } from '#lib/types/types.ts';
 
 export const themeState: TThemeState = $state({
-	theme: 'auto'
+	theme: 'auto',
+	currentColorMode: 'dark'
 });
 
 /**
@@ -21,6 +22,12 @@ function normalizeTheme(theme: string): TTheme {
  */
 function setNormTheme(normTheme: TTheme) {
 	themeState.theme = normTheme;
+	if (normTheme === 'dark' || normTheme === 'light') {
+		themeState.currentColorMode = normTheme;
+	} else if (typeof window !== 'undefined') {
+		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		themeState.currentColorMode = prefersDark ? 'dark' : 'light';
+	}
 
 	try {
 		document.documentElement.setAttribute('data-theme', normTheme);
