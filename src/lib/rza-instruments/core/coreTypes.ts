@@ -76,3 +76,8 @@ export type TCtxLine = {
     from: TCtxPoint;
     to: TCtxPoint;
 }
+
+/**
+ * Имя события Drawer
+ */
+export type TDrawerEventName = 'resize';
