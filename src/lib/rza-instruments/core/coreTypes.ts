@@ -33,19 +33,6 @@ export type TSymmetricalComponentsSystem = {
 }
 
 /**
- * Объект графики
- */
-export type TGraphicLayer = {
-    cnv: HTMLCanvasElement;
-    ctx: CanvasRenderingContext2D;
-}
-
-/**
- * Интерактивный слой графики
- */
-export type TInteractiveLayer = HTMLDivElement;
-
-/**
  * Стиль линии
  */
 export type TLineStyle = 'solid' | 'dashed';
