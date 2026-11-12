@@ -1,6 +1,6 @@
-import type { TComplex, TComplexRect } from "../coreTypes";
 import { toDegrees } from "../utils/toDegrees";
 import { toRadians } from "../utils/toRadians";
+import type { TComplex, TComplexRect } from "./types";
 
 /**
  * Нормализация угла к диапазону [0, 360)
