@@ -105,7 +105,7 @@ export type TPhasorVectorData = {
 /**
  * Ориентация осей комплексной системы координат
  */
-export type TComplexAxisOrientation = 
+export type TComplexAxisOrientation =
     'standart' //стандартная математическая (Re - вправо, Im - вверх)
     | 'alternative'; //повернутая на 90гр. (Re - вверх, Im - влево)
 
@@ -124,8 +124,3 @@ export type TCtxLine = {
     from: TCtxPoint;
     to: TCtxPoint;
 }
-
-/**
- * Имя события Drawer
- */
-export type TDrawerEventName = 'resize';
