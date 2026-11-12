@@ -1,7 +1,6 @@
 import type { TComplex, TComplexRect } from "../coreTypes";
-
-const DEG = 180 / Math.PI;
-const RAD = Math.PI / 180;
+import { toDegrees } from "../utils/toDegrees";
+import { toRadians } from "../utils/toRadians";
 
 /**
  * Нормализация угла к диапазону [0, 360)
@@ -15,7 +14,7 @@ function normalizeAngle(deg: number): number {
  * Возвращает алгебраическую форму комплексного числа на основе показательной
  */
 function toRect(c: TComplex): TComplexRect {
-    const r = c.angle * RAD;
+    const r = toRadians(c.angle);
     return {
         re: c.value * Math.cos(r),
         im: c.value * Math.sin(r),
@@ -28,7 +27,7 @@ function toRect(c: TComplex): TComplexRect {
 function toIndicative(c: TComplexRect): TComplex {
     return {
         value: Math.hypot(c.re, c.im),
-        angle: normalizeAngle(Math.atan2(c.im, c.re) * DEG),
+        angle: normalizeAngle(toDegrees(Math.atan2(c.im, c.re))),
     };
 }
 
