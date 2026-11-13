@@ -6,8 +6,8 @@ import type { TComplex, TComplexRect } from "./types";
  * Нормализация угла к диапазону [0, 360)
  */
 function normalizeAngle(deg: number): number {
-    const a = deg % 360;
-    return a < 0 ? a + 360 : a;
+    const a = ((deg % 360) + 360) % 360;   // → [0, 360)
+    return a > 180 ? a - 360 : a;          // → (-180, 180]
 }
 
 /**
