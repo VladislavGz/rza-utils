@@ -9,9 +9,9 @@
 	import { Symmetric } from '../core/Symmetric/Symmetric';
 
 	let phaseSystem: TThreePhaseSystem = $state({
-		phaseA: { value: 220, angle: 0 },
-		phaseB: { value: 220, angle: -120 },
-		phaseC: { value: 220, angle: 120 }
+		phaseA: { value: 100, angle: 0 },
+		phaseB: { value: 100, angle: -120 },
+		phaseC: { value: 100, angle: 120 }
 	});
 
 	let symmetricalSystem: TSymmetricalComponentsSystem = $state(
