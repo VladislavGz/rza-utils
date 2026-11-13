@@ -153,6 +153,8 @@ export class Phasor extends Drawer {
 
     #labelMode: boolean = true;
 
+    #vectorsLabelMode: boolean = true;
+
     constructor(container: HTMLDivElement, staticCnv: HTMLCanvasElement, dynamicCnv: HTMLCanvasElement) {
         super(container, staticCnv, dynamicCnv);
 
@@ -313,9 +315,26 @@ export class Phasor extends Drawer {
     #drawStatic() {
         this.#drawGrid();
 
-        this.#currentStaticFrame.vectors.forEach(vector => {
-            this.#drawVector(this.#currentStaticFrame.ctxData[vector.id], vector.style);
+        const { vectors, ctxData } = this.#currentStaticFrame;
+        vectors.forEach(vector => {
+            this.#drawVector(ctxData[vector.id], vector.style);
         });
+
+        //Подписи векторов
+        if (this.#vectorsLabelMode) {
+            const ctx = this.staticLayer.ctx;
+            const style = Phasor.settings.style[this.#colorMode];
+            ctx.font = `${style.fontSize}px ${style.fontFamily}`;
+            ctx.fillStyle = style.fontColor;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            vectors.forEach(vector => {
+                if (!vector.style.useLabel) return;
+                const { x, y } = ctxData[vector.id].to;
+                ctx.fillText(vector.id, x + 20, y + 10)
+            });
+        }
     }
 
     #drawDynamic() {       
@@ -477,6 +496,11 @@ export class Phasor extends Drawer {
     setLabelMode(labelMode: boolean) {
         this.#labelMode = labelMode;
         this.rerender();
+    }
+
+    setVectorsLabelMode(mode: boolean) {
+        this.#vectorsLabelMode = mode;
+        this.rerenderStatic();
     }
 
     setScalePos(scalePos: number) {
