@@ -155,6 +155,8 @@ export class Phasor extends Drawer {
 
     #vectorsLabelMode: boolean = true;
 
+    #gridMode: boolean = true;
+
     constructor(container: HTMLDivElement, staticCnv: HTMLCanvasElement, dynamicCnv: HTMLCanvasElement) {
         super(container, staticCnv, dynamicCnv);
 
@@ -212,6 +214,8 @@ export class Phasor extends Drawer {
     }
 
     #drawGrid() {
+        if (!this.#gridMode) return;
+
         const { cnv, ctx } = this.staticLayer;
         const { x: xc, y: yc } = this.#currentStaticFrame.center;
         const w = cnv.width;
@@ -500,6 +504,11 @@ export class Phasor extends Drawer {
 
     setVectorsLabelMode(mode: boolean) {
         this.#vectorsLabelMode = mode;
+        this.rerenderStatic();
+    }
+
+    setGridMode(mode: boolean) {
+        this.#gridMode = mode;
         this.rerenderStatic();
     }
 
