@@ -294,6 +294,7 @@
 				axisOrientation="alternative"
 				labelMode={true}
 				vectorLabelMode={true}
+                gridMode={true}
 				vectors={[
 					{
 						id: 'A1',
