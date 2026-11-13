@@ -41,7 +41,8 @@ export class Phasor extends Drawer {
         defaultVectorStyle: {
             color: '#aaaaaa',
             style: "solid",
-            lineWidth: 1
+            lineWidth: 1,
+            useLabel: true
         },
 
         vectorDragSize: 8,
