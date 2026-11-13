@@ -24,6 +24,11 @@ export type TPhasorVectorStyle = {
      * Толщина линии вектора
      */
     lineWidth: number;
+
+    /**
+     * Флаг, указывающий должна ли для вектора отрисовываться подпись
+     */
+    useLabel: boolean;
 }
 
 /**
