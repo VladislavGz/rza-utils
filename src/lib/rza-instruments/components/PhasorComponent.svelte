@@ -13,10 +13,12 @@
 		vectors: TPhasorVectorData[];
 		axisOrientation: TPhasorAxisOrientation;
 		labelMode: boolean;
+		vectorLabelMode: boolean;
 		onDrag: (e: IPhasorDragEvent) => void;
 	};
 
-	const { vectors, axisOrientation, labelMode, onDrag }: TPhasorComponentProps = $props();
+	const { vectors, axisOrientation, labelMode, vectorLabelMode, onDrag }: TPhasorComponentProps =
+		$props();
 
 	let err = $state.raw<Error | null>(null);
 
@@ -41,6 +43,10 @@
 
 			$effect(() => {
 				phasor.setLabelMode(labelMode);
+			});
+
+			$effect(() => {
+				phasor.setVectorsLabelMode(vectorLabelMode);
 			});
 
 			return () => phasor.destroy();
