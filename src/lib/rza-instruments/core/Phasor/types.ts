@@ -60,7 +60,7 @@ export type TPhasorVectorData = {
     /**
      * Стиль вектора
      */
-    style?: TPhasorVectorStyle;
+    style: TPhasorVectorStyle;
 }
 
 /**
@@ -145,11 +145,6 @@ export type TPhasorSettings = {
      * Настройки стилей линий векторов
      */
     lineDash: Record<TLineStyle, number[]>;
-
-    /**
-     * Дефолтный стиль векторов
-     */
-    defaultVectorStyle: TPhasorVectorStyle;
 
     /**
      * Размер области захвата вектора

@@ -38,13 +38,6 @@ export class Phasor extends Drawer {
             dashed: [4, 4]
         },
 
-        defaultVectorStyle: {
-            color: '#aaaaaa',
-            style: "solid",
-            lineWidth: 1,
-            useLabel: true
-        },
-
         vectorDragSize: 8,
     }
 
@@ -300,16 +293,15 @@ export class Phasor extends Drawer {
         }
     }
 
-    #drawVector(ctxVector: TCtxLine, style?: TPhasorVectorStyle) {
+    #drawVector(ctxVector: TCtxLine, style: TPhasorVectorStyle) {
         const ctx = this.staticLayer.ctx;
-        const s = style ?? Phasor.settings.defaultVectorStyle;
         const dash = Phasor.settings.lineDash;
 
-        ctx.strokeStyle = s.color;
-        ctx.lineWidth = s.lineWidth;
-        ctx.setLineDash(dash[s.style]);
+        ctx.strokeStyle = style.color;
+        ctx.lineWidth = style.lineWidth;
+        ctx.setLineDash(dash[style.style]);
 
-        const d = s.lineWidth % 2 === 0 ? 0 : 0.5;
+        const d = style.lineWidth % 2 === 0 ? 0 : 0.5;
         const { from, to } = ctxVector;
 
         ctx.beginPath();
@@ -365,7 +357,7 @@ export class Phasor extends Drawer {
         //Отклик при наведении на вектор
         if (this.#interactiveState.navigated) {
             const { to: { x, y } } = this.#currentStaticFrame.ctxData[this.#interactiveState.navigated.id];
-            ctx.fillStyle = this.#interactiveState.navigated.style?.color || settings.defaultVectorStyle.color;
+            ctx.fillStyle = this.#interactiveState.navigated.style.color;
             ctx.beginPath();
             ctx.ellipse(x, y, settings.vectorDragSize, settings.vectorDragSize, 0, 0, 2 * Math.PI);
             ctx.fill();
