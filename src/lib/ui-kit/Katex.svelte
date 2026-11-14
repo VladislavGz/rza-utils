@@ -3,9 +3,10 @@
 
 	type TKatexProps = {
 		text: string;
+		displayMode: boolean;
 	};
 
-	const { text }: TKatexProps = $props();
+	const { text, displayMode }: TKatexProps = $props();
 </script>
 
-{@html renderMath(text, true)}
+{@html renderMath(text, displayMode)}
