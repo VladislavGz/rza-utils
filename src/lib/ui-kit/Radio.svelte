@@ -14,6 +14,7 @@
 
 	// Инициализация один раз: если defaultOption есть и валиден — выбираем его.
 	let selected = $state<string | null>(
+		// svelte-ignore state_referenced_locally
 		defaultOption != null && options.includes(defaultOption) ? defaultOption : null
 	);
 
