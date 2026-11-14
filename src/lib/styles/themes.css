@@ -13,7 +13,8 @@
 	--dark-bg-main-color-0: #333;
 	--dark-bg-main-color-p100: #444;
 	--dark-bg-main-color-p200: #555;
-	--dark-bg-accent-color: #6c5ce7;
+	--dark-bg-accent-color-0: #6c5ce7;
+	--dark-bg-accent-color-p100: #9385F3;
 
 	--dark-icon-color-main: #aaa;
 	--dark-icon-color-accent: #eee;
@@ -43,7 +44,8 @@
 	--light-bg-main-color-0: #ccc;
 	--light-bg-main-color-p100: #ddd;
 	--light-bg-main-color-p200: #eee;
-	--light-bg-accent-color: #6c5ce7;
+	--light-bg-accent-color-0: #6c5ce7;
+	--light-bg-accent-color-p100: #9385F3;
 
 	--light-icon-color-main: #555;
 	--light-icon-color-accent: #333;
@@ -74,7 +76,8 @@
 	--bg-main-color-0: var(--dark-bg-main-color-0);
 	--bg-main-color-p100: var(--dark-bg-main-color-p100);
 	--bg-main-color-p200: var(--dark-bg-main-color-p200);
-	--bg-accent-color: var(--dark-bg-accent-color);
+	--bg-accent-color-0: var(--dark-bg-accent-color-0);
+	--bg-accent-color-p100: var(--dark-bg-accent-color-p100);
 
 	--icon-color-main: var(--dark-icon-color-main);
 	--icon-color-accent: var(--dark-icon-color-accent);
@@ -105,7 +108,8 @@
 	--bg-main-color-0: var(--light-bg-main-color-0);
 	--bg-main-color-p100: var(--light-bg-main-color-p100);
 	--bg-main-color-p200: var(--light-bg-main-color-p200);
-	--bg-accent-color: var(--light-bg-accent-color);
+	--bg-accent-color-0: var(--light-bg-accent-color-0);
+	--bg-accent-color-p100: var(--light-bg-accent-color-p100);
 
 	--icon-color-main: var(--light-icon-color-main);
 	--icon-color-accent: var(--light-icon-color-accent);
@@ -137,7 +141,8 @@
 		--bg-main-color-0: var(--dark-bg-main-color-0);
 		--bg-main-color-p100: var(--dark-bg-main-color-p100);
 		--bg-main-color-p200: var(--dark-bg-main-color-p200);
-		--bg-accent-color: var(--dark-bg-accent-color);
+		--bg-accent-color-0: var(--dark-bg-accent-color-0);
+		--bg-accent-color-p100: var(--dark-bg-accent-color-p100);
 
 		--icon-color-main: var(--dark-icon-color-main);
 		--icon-color-accent: var(--dark-icon-color-accent);
@@ -170,7 +175,8 @@
 		--bg-main-color-0: var(--light-bg-main-color-0);
 		--bg-main-color-p100: var(--light-bg-main-color-p100);
 		--bg-main-color-p200: var(--light-bg-main-color-p200);
-		--bg-accent-color: var(--light-bg-accent-color);
+		--bg-accent-color-0: var(--light-bg-accent-color-0);
+		--bg-accent-color-p100: var(--light-bg-accent-color-p100);
 
 		--icon-color-main: var(--light-icon-color-main);
 		--icon-color-accent: var(--light-icon-color-accent);
