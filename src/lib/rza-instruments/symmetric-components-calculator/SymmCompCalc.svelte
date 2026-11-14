@@ -1,10 +1,13 @@
 <script lang="ts">
+	import Radio from '#lib/ui-kit/Radio.svelte';
 	import Title from '#lib/ui-kit/Title.svelte';
+	import Toggle from '#lib/ui-kit/Toggle.svelte';
 	import ComplexInputField from '../components/ComplexInputField.svelte';
 	import PhasorComponent from '../components/PhasorComponent.svelte';
 	import { Complex } from '../core/Complex/Complex';
 	import type { TComplex } from '../core/Complex/types';
 	import type { TSymmetricalComponentsSystem, TThreePhaseSystem } from '../core/coreTypes';
+	import type { TPhasorAxisOrientation } from '../core/Phasor/types';
 	import { Symmetric } from '../core/Symmetric/Symmetric';
 
 	let phaseSystem: TThreePhaseSystem = $state({
@@ -50,6 +53,18 @@
 			A0: symmetricalSystem.A0
 		}
 	});
+
+	const settings: {
+		axisOrientation: TPhasorAxisOrientation;
+		labelMode: boolean;
+		vectorLabelMode: boolean;
+		gridMode: boolean;
+	} = $state({
+		axisOrientation: 'alternative',
+		labelMode: true,
+		vectorLabelMode: true,
+		gridMode: true
+	});
 </script>
 
 <Title level={1}>Калькулятор симметричных составляющих</Title>
@@ -81,10 +96,7 @@
 		/>
 
 		<PhasorComponent
-			axisOrientation="alternative"
-			labelMode={true}
-			vectorLabelMode={true}
-            gridMode={true}
+			{...settings}
 			vectors={[
 				{
 					id: 'A',
@@ -291,10 +303,7 @@
 
 		<div class="symm-phasors-container">
 			<PhasorComponent
-				axisOrientation="alternative"
-				labelMode={true}
-				vectorLabelMode={true}
-                gridMode={true}
+				{...settings}
 				vectors={[
 					{
 						id: 'A1',
@@ -406,10 +415,27 @@
 		</div>
 	</div>
 </div>
+<div class="panel">
+	<Radio
+		legend="Ориентация осей"
+		options={['Стандартная', 'Альтернативная']}
+		defaultOption="Альтернативная"
+		onChange={(opt) => {
+			if (opt === 'Альтернативная') {
+				settings.axisOrientation = 'alternative';
+			} else {
+				settings.axisOrientation = 'standart';
+			}
+		}}
+	/>
+    <Toggle legend='Сетка' default={settings.gridMode} onChange={(value) => {settings.gridMode = value}}/>
+    <Toggle legend='Подписи' default={settings.labelMode} onChange={(value) => {settings.labelMode = value}}/>
+    <Toggle legend='Векторы' default={settings.vectorLabelMode} onChange={(value) => {settings.vectorLabelMode = value}}/>
+</div>
 
 <style>
 	.grid {
-		margin-top: 12px;
+		margin-top: 26px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
@@ -426,6 +452,17 @@
 		display: block;
 		border-top: 1px solid var(--pale-text-color);
 	}
+
+    .panel {
+        margin-top: 26px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 
 	@media (width < 1000px) {
 		.grid {
