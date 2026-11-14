@@ -3,10 +3,10 @@
 
 	type TKatexProps = {
 		text: string;
-		displayMode: boolean;
+		displayMode?: boolean;
 	};
 
-	const { text, displayMode }: TKatexProps = $props();
+	const { text, displayMode = true }: TKatexProps = $props();
 </script>
 
 {@html renderMath(text, displayMode)}
