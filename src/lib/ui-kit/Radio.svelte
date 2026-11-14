@@ -60,11 +60,12 @@
 
 		cursor: pointer;
 		user-select: none;
+        transition: background-color 0.2s ease-in;
 	}
 
 	.radio__option--checked {
-		background-color: var(--bg-main-color-p200);
-		color: var(--accent-text-color);
+		background-color: var(--bg-accent-color-0);
+		color: #eee;
 
 		pointer-events: none;
 	}
@@ -74,7 +75,7 @@
 	}
 
 	.radio__option:has(input:focus-visible) {
-		outline: 2px solid var(--main-text-color);
+		outline: 2px solid var(--bg-accent-color-0);
 		outline-offset: 2px;
 	}
 </style>
