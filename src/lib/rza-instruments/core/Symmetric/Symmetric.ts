@@ -1,5 +1,6 @@
 import { Complex } from "../Complex/Complex";
-import type { TComplex, TSymmetricalComponentsSystem, TThreePhaseSystem } from "../coreTypes";
+import type { TComplex } from "../Complex/types";
+import type { TSymmetricalComponentsSystem, TThreePhaseSystem } from "../coreTypes";
 
 /**
  * Оператор поворота a = e^(j120°)
