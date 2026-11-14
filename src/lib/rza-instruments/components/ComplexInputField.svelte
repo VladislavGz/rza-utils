@@ -1,6 +1,6 @@
 <script lang="ts">
 	import NumberInputField from '#lib/ui-kit/NumberInputField.svelte';
-	import { TComplex } from '../core/Complex/types';
+	import type { TComplex } from '../core/Complex/types';
 
 	type TComplexInputField = {
 		name: string;
