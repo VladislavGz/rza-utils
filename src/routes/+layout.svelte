@@ -5,6 +5,7 @@
 	// import favicon from '#lib/assets/favicon.svg';
 	import type { LayoutProps } from './$types';
 	import '#lib/styles/index.css';
+    import 'katex/dist/katex.min.css';
 	import { onMount } from 'svelte';
 	import { themeApi } from '#lib/services/themeService.svelte.ts';
 
