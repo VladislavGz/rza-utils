@@ -59,7 +59,7 @@
 		height: 18px;
 		border-radius: 999px;
 		background-color: var(--bg-main-color-p100);
-		transition: background-color 0.2s ease;
+		transition: background-color 0.2s ease-in;
 	}
 
 	.toggle__thumb {
