@@ -2,19 +2,21 @@
 	import type { Snippet } from 'svelte';
 	import Icon from './Icon.svelte';
 	import ChatInfoSVG from '#lib/assets/icons/ChatInfoSVG.svelte';
+	import type { TFont } from '#lib/types/ui-types.ts';
 
 	type TInfoProps = {
+        font?: TFont;
 		children: Snippet;
 	};
 
-	const { children }: TInfoProps = $props();
+	const { font = 'main', children }: TInfoProps = $props();
 </script>
 
 <div class="info">
 	<Icon size="large">
 		<ChatInfoSVG />
 	</Icon>
-	<div class="g-main-text info-text">
+	<div class="g-main-text info-text _g-font-{font}">
 		{@render children()}
 	</div>
 </div>
