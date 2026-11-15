@@ -87,6 +87,18 @@
 	padding-inline: 12px;
 }
 
+._g-font-main {
+	font-family: var(--main-font);
+}
+
+._g-font-logo {
+	font-family: var(--logo-font);
+}
+
+._g-font-accent {
+	font-family: var(--accent-font);
+}
+
 .g-scrollable-v {
 	&::-webkit-scrollbar {
 		width: 16px;
