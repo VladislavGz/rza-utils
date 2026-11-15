@@ -17,7 +17,7 @@
 
 <a
 	{href}
-	class="g-link link _font-{font} {useDecoration ? '_decoration' : null} {isActive
+	class="g-link link _g-font-{font} {useDecoration ? '_decoration' : null} {isActive
 		? '_isActive'
 		: null}"
 >
@@ -26,18 +26,6 @@
 
 <style>
 	.link {
-		&._font-main {
-			font-family: var(--main-font);
-		}
-
-		&._font-accent {
-			font-family: var(--accent-font);
-		}
-
-		&._font-logo {
-			font-family: var(--logo-font);
-		}
-
 		&._isActive {
 			pointer-events: none;
             color: var(--title-h3-color);
