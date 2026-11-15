@@ -1,4 +1,7 @@
 <script lang="ts">
+	import Info from '#lib/ui-kit/Info.svelte';
+	import Katex from '#lib/ui-kit/Katex.svelte';
+	import Paragraph from '#lib/ui-kit/Paragraph.svelte';
 	import Radio from '#lib/ui-kit/Radio.svelte';
 	import Title from '#lib/ui-kit/Title.svelte';
 	import Toggle from '#lib/ui-kit/Toggle.svelte';
@@ -428,9 +431,127 @@
 			}
 		}}
 	/>
-    <Toggle legend='Сетка' default={settings.gridMode} onChange={(value) => {settings.gridMode = value}}/>
-    <Toggle legend='Подписи' default={settings.labelMode} onChange={(value) => {settings.labelMode = value}}/>
-    <Toggle legend='Векторы' default={settings.vectorLabelMode} onChange={(value) => {settings.vectorLabelMode = value}}/>
+	<Toggle
+		legend="Сетка"
+		default={settings.gridMode}
+		onChange={(value) => {
+			settings.gridMode = value;
+		}}
+	/>
+	<Toggle
+		legend="Подписи"
+		default={settings.labelMode}
+		onChange={(value) => {
+			settings.labelMode = value;
+		}}
+	/>
+	<Toggle
+		legend="Векторы"
+		default={settings.vectorLabelMode}
+		onChange={(value) => {
+			settings.vectorLabelMode = value;
+		}}
+	/>
+</div>
+<div class="instrument-description">
+	<div class="description-section">
+		<Title level={2} font="main">Метод симметричных составляющих</Title>
+		<Paragraph
+			>Метод симметричных составляющих (преобразование Фортескью) — это математический приём,
+			позволяющий анализировать любую несимметричную трёхфазную систему (токов или напряжений) как
+			сумму трёх симметричных систем: <strong>прямой</strong>,
+			<strong>обратной</strong>
+			и
+			<strong>нулевой</strong> последовательностей.
+		</Paragraph>
+	</div>
+
+	<div class="description-section">
+		<Title level={3} font="main">1. Оператор поворота</Title>
+		<Paragraph
+			>Для удобства расчётов вводится комплексный оператор <Katex
+				text={String.raw`a`}
+				displayMode={false}
+			/>, который представляет собой поворот вектора на <Katex
+				text={String.raw`120^\circ`}
+				displayMode={false}
+			/> против часовой стрелки:
+		</Paragraph>
+		<div>
+			<Katex text={String.raw`a = e^{j120^\circ} = -\frac{1}{2} + j\frac{\sqrt{3}}{2}`} />
+			<Katex
+				text={String.raw`a^2 = e^{j240^\circ} = e^{-j120^\circ} = -\frac{1}{2} - j\frac{\sqrt{3}}{2}`}
+			/>
+		</div>
+	</div>
+
+	<div class="description-section">
+		<Title level={3} font="main">2. Три последовательности</Title>
+		<Paragraph>
+			Любая несимметричная система векторов
+			<Katex text={String.raw`\dot A, \dot B, \dot C`} displayMode={false} />
+			раскладывается на:
+		</Paragraph>
+
+		<ul class="description-list">
+			<li class="description-list-item">
+				<strong>Прямая последовательность (A1, B1, C1)</strong> — симметричная система с
+				чередованием фаз A → B → C. Векторы равны по модулю и сдвинуты на 120° (B отстаёт от A):
+				<Katex text={String.raw`\dot B_1 = a^2 \dot A_1, \quad \dot C_1 = a \dot A_1`} />
+			</li>
+			<li class="description-list-item">
+				<strong>Обратная последовательность (A2, B2, C2)</strong> — симметричная система с обратным
+				чередованием фаз A → C → B. Векторы равны по модулю и сдвинуты на 120° (B опережает A):
+				<Katex text={String.raw`\dot B_2 = a \dot A_2, \quad \dot C_2 = a^2 \dot A_2`} />
+			</li>
+			<li class="description-list-item">
+				<strong>Нулевая последовательность (A0, B0, C0)</strong> — все три вектора равны по модулю и
+				совпадают по фазе:
+				<Katex text={String.raw`\dot A_0 = \dot B_0 = \dot C_0`} />
+			</li>
+		</ul>
+	</div>
+
+	<div class="description-section">
+		<Title level={3} font="main">3. Прямое преобразование (разложение)</Title>
+		<Paragraph>
+			Чтобы найти симметричные составляющие для фазы A по известным фазным величинам, используются
+			формулы:
+		</Paragraph>
+		<div>
+			<Katex text={String.raw`\dot A_1 = \frac{\dot A + a\dot B + a^2\dot C}{3}`} />
+			<Katex text={String.raw`\dot A_2 = \frac{\dot A + a^2\dot B + a\dot C}{3}`} />
+			<Katex text={String.raw`\dot A_0 = \frac{\dot A + \dot B + \dot C}{3}`} />
+		</div>
+
+		<Paragraph>
+			Составляющие для фаз B и C находятся через оператор
+			<Katex text={String.raw`a`} displayMode={false} />
+			(см. пункт 2).
+		</Paragraph>
+	</div>
+
+	<div class="description-section">
+		<Title level={3} font="main">4. Обратное преобразование (синтез)</Title>
+		<Paragraph>
+			Если известны симметричные составляющие, исходные фазные величины восстанавливаются по
+			формулам:
+		</Paragraph>
+		<div>
+			<Katex text={String.raw`\dot A = \dot A_1 + \dot A_2 + \dot A_0`} />
+			<Katex text={String.raw`\dot B = a^2\dot A_1 + a\dot A_2 + \dot A_0`} />
+			<Katex text={String.raw`\dot C = a\dot A_1 + a^2\dot A_2 + \dot A_0`} />
+		</div>
+	</div>
+
+	<Info>
+		Метод симметричных составляющих был изобретен американским инженером-электротехником Чарльзом
+		Легейтом Фортескью (Charles LeGeyt Fortescue). В 1918 году он представил научную работу, в
+		которой доказал теорему о том, что любую несимметричную систему из <em><strong>N</strong></em>
+		векторов (фазоров) можно представить как сумму <em><strong>N</strong></em> симметричных систем. Для
+		трёхфазных цепей это открытие стало революционным, так как позволило инженерам анализировать сложные
+		аварийные режимы (например, однофазные замыкания на землю) с помощью обычных линейных уравнений.
+	</Info>
 </div>
 
 <style>
@@ -453,16 +574,39 @@
 		border-top: 1px solid var(--pale-text-color);
 	}
 
-    .panel {
-        margin-top: 26px;
+	.panel {
+		margin-top: 26px;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.instrument-description {
+		margin-top: 26px;
+		padding-top: 26px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 26px;
+
+		border-top: 1px solid var(--pale-text-color);
+		color: var(--main-text-color);
+	}
+
+	.description-section {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.description-list-item {
+		margin-left: 26px;
+		list-style: disc;
+	}
 
 	@media (width < 1000px) {
 		.grid {
