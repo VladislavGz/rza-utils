@@ -606,6 +606,8 @@
 	.description-list-item {
 		margin-left: 26px;
 		list-style: disc;
+
+        font-family: var(--main-font);
 	}
 
 	@media (width < 1000px) {
