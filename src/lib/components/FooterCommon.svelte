@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Link from "#lib/ui-kit/Link.svelte";
+	import Link from '#lib/ui-kit/Link.svelte';
+	import CopyrightNote from './CopyrightNote.svelte';
 </script>
 
 <footer class="g-common-wrapper footer-common">
@@ -8,11 +9,13 @@
 		<Link href="/about">О проекте</Link>
 		<Link href="/user-agreement">Пользовательское соглашение</Link>
 	</div>
+	<CopyrightNote />
 </footer>
 
 <style>
 	.footer-common {
 		width: 100%;
+        padding-bottom: 12px;
 	}
 
 	.wrapper {
