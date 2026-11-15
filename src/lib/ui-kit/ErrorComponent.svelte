@@ -15,7 +15,7 @@
 	<Icon color='main' size='large'>
 		<ErrorSVG />
 	</Icon>
-	<p class="g-main-text message _font-{font}">{message}</p>
+	<p class="g-main-text message _g-font-{font}">{message}</p>
 </div>
 
 <style>
@@ -33,17 +33,5 @@
 
 	.message {
         text-align: center;
-
-		&._font-main {
-			font-family: var(--main-font);
-		}
-
-		&._font-accent {
-			font-family: var(--accent-font);
-		}
-
-		&._font-logo {
-			font-family: var(--logo-font);
-		}
 	}
 </style>
