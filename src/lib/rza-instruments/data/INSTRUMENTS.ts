@@ -35,9 +35,9 @@ export const INSTRUMENTS: TUtilDescription[] = [
 
 	{
 		idName: 'vector-diagrams',
-		name: 'Памятка по векторным диаграммам',
-		description: 'Интерактивные векторные диаграммы для типичных видов повреждений',
-		link: '/vector-diagrams',
+		name: 'Виды повреждений в электроэнергетике',
+		description: 'Памятка по типичным видам повреждений в электроэнергетических системах',
+		link: '/articles/damages',
 		icon: KzVectorsSVG,
 		iconStrokeWidth: 2
 	},
