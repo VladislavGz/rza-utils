@@ -33,6 +33,11 @@
 
 <style>
 	:global(body) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
 		background-color: var(--bg-base-color);
 	}
 </style>
