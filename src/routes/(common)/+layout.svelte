@@ -7,5 +7,16 @@
 </script>
 
 <HeaderCommon />
-{@render children()}
+<main class="g-common-wrapper main">
+	{@render children()}
+</main>
 <FooterCommon />
+
+<style>
+    .main {
+        width: 100%;
+        flex: 1 0 auto;
+
+        align-content: center;
+    }
+</style>
