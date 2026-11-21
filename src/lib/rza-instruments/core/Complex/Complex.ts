@@ -78,6 +78,17 @@ function div(a: TComplex, b: TComplex): TComplex {
     };
 }
 
+/**
+ * Возвращает новое комплексное число, явялющееся результатом умножения комплексного
+ * числа на скаляр
+ */
+function scale(complex: TComplex, value: number): TComplex {
+    return {
+        value: Math.abs(complex.value * value),
+        angle: value >= 0 ? complex.angle : normalizeAngle(complex.angle + 180),
+    };
+}
+
 
 
 export const Complex = {
@@ -87,5 +98,6 @@ export const Complex = {
     add,
     sub,
     mul,
-    div
+    div,
+    scale
 }
